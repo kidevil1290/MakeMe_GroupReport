@@ -1,6 +1,6 @@
-PWD c:\git-practice\Fernandez_Karl_ProjectProposal\Proposal_Template
+PWD c:\git-practice\MakeMe_GroupReport\Proposal_Template
 INPUT C:\Users\karlt\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\git-practice\Fernandez_Karl_ProjectProposal\Proposal_Template\main.tex
+INPUT c:\git-practice\MakeMe_GroupReport\Proposal_Template\main.tex
 OUTPUT main.log
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
