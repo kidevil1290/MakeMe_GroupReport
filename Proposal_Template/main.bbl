@@ -1,0 +1,325 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{fox2009VRS}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1a73b9b7d46da66580e8865ab17a34a9}{%
+           family={Fox},
+           familyi={F\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5de5ad0d2163e51e15706c638c34a040}{%
+           family={Bailenson},
+           familyi={B\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{2de2de68b1427fdbd2d23a29e440c1ed}
+      \strng{fullhash}{2de2de68b1427fdbd2d23a29e440c1ed}
+      \strng{fullhashraw}{2de2de68b1427fdbd2d23a29e440c1ed}
+      \strng{bibnamehash}{2de2de68b1427fdbd2d23a29e440c1ed}
+      \strng{authorbibnamehash}{2de2de68b1427fdbd2d23a29e440c1ed}
+      \strng{authornamehash}{2de2de68b1427fdbd2d23a29e440c1ed}
+      \strng{authorfullhash}{2de2de68b1427fdbd2d23a29e440c1ed}
+      \strng{authorfullhashraw}{2de2de68b1427fdbd2d23a29e440c1ed}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Media Psychology - MEDIA PSYCHOL}
+      \field{month}{03}
+      \field{title}{Virtual Self-Modeling: The Effects of Vicarious Reinforcement and Identification on Exercise Behaviors}
+      \field{volume}{12}
+      \field{year}{2009}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1080/15213260802669474
+      \endverb
+    \endentry
+    \entry{praetorius2020avatars}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=fa2b3ad94b484adab93eabf6df56c4e0}{%
+           family={Praetorius},
+           familyi={P\bibinitperiod},
+           given={Anna\bibnamedelima Samira},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=cf95587fa712639e348839741e57ceee}{%
+           family={Görlich},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6471fde7654fdb4e4a2426ee6006129a}
+      \strng{fullhash}{6471fde7654fdb4e4a2426ee6006129a}
+      \strng{fullhashraw}{6471fde7654fdb4e4a2426ee6006129a}
+      \strng{bibnamehash}{6471fde7654fdb4e4a2426ee6006129a}
+      \strng{authorbibnamehash}{6471fde7654fdb4e4a2426ee6006129a}
+      \strng{authornamehash}{6471fde7654fdb4e4a2426ee6006129a}
+      \strng{authorfullhash}{6471fde7654fdb4e4a2426ee6006129a}
+      \strng{authorfullhashraw}{6471fde7654fdb4e4a2426ee6006129a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 15th international conference on the foundations of digital games}
+      \field{title}{How avatars influence user behavior: A review on the proteus effect in virtual environments and video games}
+      \field{year}{2020}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+    \endentry
+    \entry{hall2026bestfitnessapps}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=2432f539835ec884067bd3826e291388}{%
+           family={Hall},
+           familyi={H\bibinitperiod},
+           given={Alena},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Forbes Health}%
+      }
+      \strng{namehash}{2432f539835ec884067bd3826e291388}
+      \strng{fullhash}{2432f539835ec884067bd3826e291388}
+      \strng{fullhashraw}{2432f539835ec884067bd3826e291388}
+      \strng{bibnamehash}{2432f539835ec884067bd3826e291388}
+      \strng{authorbibnamehash}{2432f539835ec884067bd3826e291388}
+      \strng{authornamehash}{2432f539835ec884067bd3826e291388}
+      \strng{authorfullhash}{2432f539835ec884067bd3826e291388}
+      \strng{authorfullhashraw}{2432f539835ec884067bd3826e291388}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{9}
+      \field{month}{7}
+      \field{title}{The 10 Best Workout and Fitness Apps of 2026}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.forbes.com/health/weight-loss/best-fitness-apps/
+      \endverb
+      \verb{url}
+      \verb https://www.forbes.com/health/weight-loss/best-fitness-apps/
+      \endverb
+    \endentry
+    \entry{herman2026bestfitnessapps}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=d162e618373bc4921e8d635dee2efbfe}{%
+           family={Herman},
+           familyi={H\bibinitperiod},
+           given={Hannah},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Zapier}%
+      }
+      \strng{namehash}{d162e618373bc4921e8d635dee2efbfe}
+      \strng{fullhash}{d162e618373bc4921e8d635dee2efbfe}
+      \strng{fullhashraw}{d162e618373bc4921e8d635dee2efbfe}
+      \strng{bibnamehash}{d162e618373bc4921e8d635dee2efbfe}
+      \strng{authorbibnamehash}{d162e618373bc4921e8d635dee2efbfe}
+      \strng{authornamehash}{d162e618373bc4921e8d635dee2efbfe}
+      \strng{authorfullhash}{d162e618373bc4921e8d635dee2efbfe}
+      \strng{authorfullhashraw}{d162e618373bc4921e8d635dee2efbfe}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{month}{6}
+      \field{title}{The 9 Best Fitness Apps in 2026}
+      \field{urlday}{12}
+      \field{urlmonth}{10}
+      \field{urlyear}{2026}
+      \field{year}{2026}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://zapier.com/blog/best-fitness-tracking-apps/
+      \endverb
+      \verb{url}
+      \verb https://zapier.com/blog/best-fitness-tracking-apps/
+      \endverb
+    \endentry
+    \entry{neupane2020review}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=5861b544e457beae2ec7efdfa8633f33}{%
+           family={Neupane},
+           familyi={N\bibinitperiod},
+           given={Aatish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=24065f9e74eadf8afc5b469425bb96c1}{%
+           family={Hansen},
+           familyi={H\bibinitperiod},
+           given={Derek},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0ce60a0b297ed264e60400794259019c}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Anud},
+           giveni={A\bibinitperiod}}}%
+        {{hash=04ab73941b428e60d67b5db4302d5c99}{%
+           family={Fails},
+           familyi={F\bibinitperiod},
+           given={Jerry\bibnamedelima Alan},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=a956c2c10480e80ff736624d382a3eb6}{%
+           family={Neupane},
+           familyi={N\bibinitperiod},
+           given={Bikalpa},
+           giveni={B\bibinitperiod}}}%
+        {{hash=57aa95c1223e96448abf2ee1fdf9b380}{%
+           family={Beutler},
+           familyi={B\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a7b8bdc6dd61f2ec34c15088bf098088}
+      \strng{fullhash}{676735ddbdda10ddc791af4d18794bce}
+      \strng{fullhashraw}{676735ddbdda10ddc791af4d18794bce}
+      \strng{bibnamehash}{676735ddbdda10ddc791af4d18794bce}
+      \strng{authorbibnamehash}{676735ddbdda10ddc791af4d18794bce}
+      \strng{authornamehash}{a7b8bdc6dd61f2ec34c15088bf098088}
+      \strng{authorfullhash}{676735ddbdda10ddc791af4d18794bce}
+      \strng{authorfullhashraw}{676735ddbdda10ddc791af4d18794bce}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Annual Symposium on Computer-Human Interaction in Play}
+      \field{title}{A review of gamified fitness tracker apps and future directions}
+      \field{year}{2020}
+      \field{pages}{522\bibrangedash 533}
+      \range{pages}{12}
+    \endentry
+    \entry{koh2026motivational}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=3156a262f542c48cbeec507aaccfa51a}{%
+           family={Koh},
+           familyi={K\bibinitperiod},
+           given={Ghee\bibnamedelima Kian},
+           giveni={G\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=912d66eb184f379110d66a0292b6979c}{%
+           family={Low},
+           familyi={L\bibinitperiod},
+           given={Kimberly\bibnamedelimb Mei\bibnamedelima Yi},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=763e9521f44c897f3002ed4cabce80a3}{%
+           family={Ali},
+           familyi={A\bibinitperiod},
+           given={Shahmir\bibnamedelima H},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c48149902577b92f3ec0231c1b4395e6}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Hooi\bibnamedelima Swang},
+           giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=87fbaa7eaf3fb7c79566f97fdd078686}{%
+           family={Ang},
+           familyi={A\bibinitperiod},
+           given={Ian\bibnamedelimb Yi\bibnamedelima Han},
+           giveni={I\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JMIR Publications Inc., Toronto, Canada}%
+      }
+      \strng{namehash}{09ca573082ae4f8d66c1ca79d1e68856}
+      \strng{fullhash}{2f53c5b9431433cece708efae308d962}
+      \strng{fullhashraw}{2f53c5b9431433cece708efae308d962}
+      \strng{bibnamehash}{2f53c5b9431433cece708efae308d962}
+      \strng{authorbibnamehash}{2f53c5b9431433cece708efae308d962}
+      \strng{authornamehash}{09ca573082ae4f8d66c1ca79d1e68856}
+      \strng{authorfullhash}{2f53c5b9431433cece708efae308d962}
+      \strng{authorfullhashraw}{2f53c5b9431433cece708efae308d962}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Medical Internet Research}
+      \field{number}{1}
+      \field{title}{Motivational factors, physical activity impacts, and sociopsychological effects of Pokémon GO in players over the years: scoping review}
+      \field{volume}{28}
+      \field{year}{2026}
+      \field{pages}{e89235}
+      \range{pages}{-1}
+    \endentry
+    \entry{yim2007using}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=7f0b078768b176f52f910c7fb70cf698}{%
+           family={Yim},
+           familyi={Y\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=af7453d3b637d05a2b29d3f59f202eb3}{%
+           family={Graham},
+           familyi={G\bibinitperiod},
+           given={TC\bibnamedelima Nicholas},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{891823ba3dd7506691edf729cb763da0}
+      \strng{fullhash}{891823ba3dd7506691edf729cb763da0}
+      \strng{fullhashraw}{891823ba3dd7506691edf729cb763da0}
+      \strng{bibnamehash}{891823ba3dd7506691edf729cb763da0}
+      \strng{authorbibnamehash}{891823ba3dd7506691edf729cb763da0}
+      \strng{authornamehash}{891823ba3dd7506691edf729cb763da0}
+      \strng{authorfullhash}{891823ba3dd7506691edf729cb763da0}
+      \strng{authorfullhashraw}{891823ba3dd7506691edf729cb763da0}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2007 conference on Future Play}
+      \field{title}{Using games to increase exercise motivation}
+      \field{year}{2007}
+      \field{pages}{166\bibrangedash 173}
+      \range{pages}{8}
+    \endentry
+    \entry{USDAFoodDataCentralAPI}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a1e768a0804909b3eddc399581d4a1c6}{%
+           family={{U.S. Department of Agriculture, Agricultural Research Service}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{a1e768a0804909b3eddc399581d4a1c6}
+      \strng{fullhash}{a1e768a0804909b3eddc399581d4a1c6}
+      \strng{fullhashraw}{a1e768a0804909b3eddc399581d4a1c6}
+      \strng{bibnamehash}{a1e768a0804909b3eddc399581d4a1c6}
+      \strng{authorbibnamehash}{a1e768a0804909b3eddc399581d4a1c6}
+      \strng{authornamehash}{a1e768a0804909b3eddc399581d4a1c6}
+      \strng{authorfullhash}{a1e768a0804909b3eddc399581d4a1c6}
+      \strng{authorfullhashraw}{a1e768a0804909b3eddc399581d4a1c6}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://fdc.nal.usda.gov/api-guide}}
+      \field{note}{Accessed: 14 October 2026}
+      \field{title}{{FoodData Central API Guide}}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

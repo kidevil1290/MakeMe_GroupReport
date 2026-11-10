@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.jj": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/c:\\git-practice\\Proposal_Template\\main.aux": true,
+        "**/c:\\git-practice\\Proposal_Template\\main.log": true,
+        "**/c:\\git-practice\\Proposal_Template\\main.gz": true,
+        "**/c:\\git-practice\\Proposal_Template\\main.out": true
+    }
+}

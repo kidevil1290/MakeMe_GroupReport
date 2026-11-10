@@ -1,0 +1,118 @@
+CIS 3296 — Citation and Bibliography Example
+============================================
+
+The template uses BibLaTeX with IEEE-style numbered citations.
+
+1. ADD THE SOURCE TO references.bib
+-----------------------------------
+
+Example:
+
+@article{myPaper,
+  author  = {Lee, Anna and Smith, Ben},
+  title   = {Title of the Actual Paper},
+  journal = {Journal Name},
+  year    = {2025},
+  volume  = {12},
+  number  = {3},
+  pages   = {101--112},
+  doi     = {10.xxxx/xxxxx}
+}
+
+The word `myPaper` is the citation key.
+
+Tip:
+BibTeX entries can usually be exported directly from Google Scholar,
+IEEE Xplore, ACM Digital Library, Springer, and other academic databases.
+
+2. CITE THE SOURCE IN main.tex
+------------------------------
+
+Write:
+
+Previous research examined similar systems \cite{myPaper}.
+
+The compiled PDF will show a numbered IEEE-style citation, for example:
+
+Previous research examined similar systems [1].
+
+Do not type [1] manually.
+
+3. CITE MORE THAN ONE SOURCE
+----------------------------
+
+Several approaches have been proposed \cite{myPaper,myOtherPaper}.
+
+4. OFFICIAL DOCUMENTATION
+-------------------------
+
+In references.bib:
+
+@online{apiDocs,
+  author  = {{Organization Name}},
+  title   = {API Documentation},
+  year    = {2026},
+  url     = {https://example.com/docs},
+  urldate = {2026-10-05}
+}
+
+In main.tex:
+
+The system will use the documented API \cite{apiDocs}.
+
+5. OPEN-SOURCE REPOSITORY
+-------------------------
+
+In references.bib:
+
+@online{projectRepo,
+  author  = {{Project Organization}},
+  title   = {Project Repository},
+  year    = {2026},
+  url     = {https://github.com/organization/project},
+  urldate = {2026-10-05},
+  note    = {Software repository}
+}
+
+In main.tex:
+
+The proposal extends the Project repository \cite{projectRepo}.
+
+For an open-source extension proposal, also state the repository license
+in the body of the proposal.
+
+6. BORROWED OR ADAPTED FIGURE
+-----------------------------
+
+A borrowed or adapted figure must be cited. Example:
+
+\caption{Existing system architecture, adapted from \cite{projectRepo}.}
+
+Original student-created UML diagrams do not require an external citation.
+
+7. PRINTING THE REFERENCES
+--------------------------
+
+The template already contains:
+
+\printbibliography[title={References}]
+
+Only cited sources normally appear in the bibliography.
+
+8. COMPILING
+------------
+
+Overleaf:
+Upload the ZIP and compile. Overleaf normally runs Biber automatically.
+
+Local LaTeX:
+Recommended command:
+
+latexmk -pdf main.tex
+
+Alternative:
+
+pdflatex main.tex
+biber main
+pdflatex main.tex
+pdflatex main.tex

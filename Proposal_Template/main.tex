@@ -1,0 +1,476 @@
+\documentclass[11pt]{article}
+
+% ============================================================
+% CIS 3296 — Software Design
+% Individual Project Proposal
+% Temple University Japan
+%
+% This project works in Overleaf or in a local LaTeX installation.
+% ============================================================
+
+% ---------- Page layout and typography ----------
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{setspace}
+
+% ---------- Figures and tables ----------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{caption}
+
+% ---------- Lists, color, links ----------
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+
+% ---------- Bibliography ----------
+\usepackage{csquotes}
+\usepackage[
+    backend=biber,
+    style=ieee,
+    sorting=none
+]{biblatex}
+\addbibresource{references.bib}
+
+% ---------- Page style ----------
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\definecolor{templeburgundy}{HTML}{9D2235}
+\definecolor{darkgray}{HTML}{3F3F3F}
+\definecolor{midgray}{HTML}{6D6D6D}
+
+\setstretch{1.05}
+\setlist[itemize]{leftmargin=1.5em}
+\setlist[enumerate]{leftmargin=1.6em}
+
+\captionsetup{
+    font=small,
+    labelfont=bf
+}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=templeburgundy,
+    citecolor=templeburgundy,
+    urlcolor=templeburgundy,
+    pdftitle={CIS 3296 Individual Project Proposal}
+}
+
+\titleformat{\section}
+  {\large\bfseries\color{templeburgundy}}
+  {\thesection.}{0.55em}{}
+
+\titleformat{\subsection}
+  {\normalsize\bfseries\color{darkgray}}
+  {\thesubsection.}{0.55em}{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small CIS 3296 — Software Design}
+\rhead{\small Individual Project Proposal}
+\cfoot{\small \thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ============================================================
+% Student information — edit these four lines
+% ============================================================
+\newcommand{\projecttitle}{Project Template}
+\newcommand{\studentname}{Karl Fernandez}
+\newcommand{\proposaltype}{New Software System / Existing Open-Source Extension}
+% \newcommand{\submissiondate}{October 2026}
+
+% Figure placeholder used until an image file is added.
+\newcommand{\figureplaceholder}[2]{%
+    \fbox{%
+        \parbox[c][#1][c]{0.88\linewidth}{%
+            \centering\color{midgray}\small #2
+        }%
+    }%
+}
+
+\begin{document}
+
+% ============================================================
+% Title page
+% ============================================================
+\begin{titlepage}
+    \thispagestyle{empty}
+    \centering
+
+    \IfFileExists{figures/temple-logo.png}{
+        \includegraphics[width=0.46\textwidth]{figures/temple-logo.png}
+    }{
+        {\Large\bfseries Temple University Japan\par}
+    }
+
+    \vspace{0.45cm}
+    {\color{templeburgundy}\rule{0.76\textwidth}{1.1pt}}
+
+    \vfill
+
+    {\Large\bfseries Group Report\par}
+
+    \vspace{1.0cm}
+
+    {\huge\bfseries MakeMe \par}
+
+    \vspace{1.5cm}
+
+    \begin{tabular}{>{\bfseries}r l}
+        Team: 
+            & Karl Fernandez \\
+            & Moe Odaki \\ 
+            & Scout Peterson \\[3pt]
+        Date: & November 26, 2026 \\
+    \end{tabular}
+
+    \vfill
+
+    {\small CIS 3296 — Software Design\par}
+\end{titlepage}
+
+% ============================================================
+% 1. Project Summary and Motivation
+% ============================================================
+\section{Project Summary and Motivation}
+
+% Write 150–250 words.
+% Explain:
+%   - the problem
+%   - the proposed software
+%   - the intended users
+%   - the value of the project
+%   - the motivation for pursuing it
+%
+% Support factual claims with citations where appropriate.
+%
+% Citation example:
+%   Previous work has investigated similar systems \cite{demoArticle2025}.
+\textit{\textbf{Problem}\\ Maintaining a healthy lifestyle requires consistent effort, including regular physical activity, 
+adequate hydration, and balanced nutrition. Traditional fitness applications provide users with tools
+to monitor their activities, record their meals, and track their progress, but users may often struggle
+to remain motivated to use these tools over time.}
+
+\textit{\textbf{Proposed Software}\\ MakeMe is a gamified fitness application that extends conventional fitness-tracking functionality into
+life-simulation mechanics and exaggerated fantasy character progression. Its defining feature is a customizable
+avatar whose daily and long-term appearance responds to the users recorded health related behaviors. Which draws
+on the concepts of vicarious reinforcement and identification through virtual self-modeling to visually reinforce
+healthy behaviors and encourages users to identify with their virtual representation \cite{fox2009VRS}.}
+
+\textit{\textbf{Intended Users}\\ MakeMe is primarily intended for individuals who enjoy video games and want to establish healthier daily habits
+through an interactive and rewarding experience. Potential users are limitless though it is mainly targeted to
+individuals who find conventional fitness applications mundane or difficult to maintain.}
+
+\textit{\textbf{Value of the Project}\\ The primary value lies in combining health monitoring with a persistent character progression system, adding a
+motivational layer by transforming general fitness application features into visible fantasy based character development.}
+
+\textit{\textbf{Motivation}\\ My motivation for pursuing this project comes from my interest in video game development and my experience with
+conventional fitness applications, where tracking numerical data alone provided limited satisfaction. This led me to consider
+how game design principles, particularly character progression could serve as visual rewards, which would make health monitoring more engaging.}
+
+
+% ============================================================
+% 2. Background and Related Work
+% ============================================================
+\section{Background and Related Work}
+
+% Discuss relevant research, existing products, technical approaches,
+% and/or open-source systems.
+%
+% Do not simply list sources. Explain what already exists and how the
+% proposed project relates to or differs from that work.
+%
+% Use at least four credible sources, normally including two scholarly
+% or research publications.
+%
+% For an existing open-source project:
+%   - identify the repository
+%   - state the license
+%   - explain the current limitation/design problem
+%   - distinguish the proposed contribution from the original project
+
+\textit{MakeMe’s avatar system draws on virtual self-modeling through vicarious reinforcement by Fox
+and Bailenson, which explored how observing virtual representation of oneself receiving reinforcement
+would influence exercise behavior \cite{fox2009VRS}. However, their research used virtual representation that
+resembled the participants, whereas MakeMe features fantasy-based character development that would
+later skew away from the users physical appearance. This distinction is intentional, as MakeMe allows
+users to watch their avatars develop into increasingly muscular and powerful characters, potentially
+inspiring them to aspire to the strength and appearance of their virtual counterparts, motivating them
+to maintain healthy habits. This design aligns the concept of wishful identification mentioned in the
+review research by Praetorius and Gorlich on the Proteus Effect, which describes how an avatar's characteristics
+may influence a users behavior and self-perception \cite{praetorius2020avatars}. While existing research does not directly establish
+a link between avatar progression and the development of healthy habits, incorporating them may still offer
+motivational benefits compared with health tracking applications without an avatar.}
+
+\textit{\textbf{What's Out There}\\ Although ranking of the top 10 fitness trackers may vary due to subjective
+reviews and potential biases, many of them can be broadly classified into three categories based on their approaches
+to fitness tracking and gamification.}
+
+\textit{Category 1 consists of conventional fitness trackers that incorporate little to no gamification,
+focusing primarily on workouts, activity logging, and social features \cite{hall2026bestfitnessapps, herman2026bestfitnessapps}. Their
+popularity suggests that stand-alone fitness monitoring remains an established approach to helping users
+track their progress and maintain their fitness routine. However, this category represents only one approach
+to fitness tracking and does not establish whether users would benefit from engaging or game-oriented alternatives.}
+
+\textit{Category 2 consists of challenge-based gamified fitness trackers that are oriented to encourage physical
+activity through step-count goals, competitions, social challenges, and real-world incentives. In 2020, (Neupane et al.)
+reviewed 103 gamified fitness tracker apps and found that challenges, competition and social influence frequently
+appeared together, while social features played a central role across nearly every identified game genre \cite{neupane2020review}.
+These findings demonstrate how conventional activity tracking can be enhanced with game mechanics that encourage
+users to remain active through external rewards, social interaction, and competition. However, this approach primarily
+builds on existing fitness tracking activities rather than making exercise part of a broader, evolving game experience.}
+
+\textit{Category 3 consists of stand-alone games that integrate physical activity directly into gameplay, encouraging
+users to exercise as they pursue in-game objectives. Games such as PokemonGO and Wii Sports demonstrate the popularity
+of this approach making physical activity more engaging through exploration and interactive gameplay \cite{koh2026motivational, yim2007using}.
+However, research on PokemonGO suggests that increased in physical activity may be short-lived, highlighting the challenge
+of sustaining user engagement and long-term exercise habits.}
+
+\textit{MakeMe aims to combine elements from all three categories into a unified experience. It aims  to incorporate the vital
+features of health and activity monitoring from conventional fitness trackers, the measurable goals and rewards of challenge-based
+gamification, and the immersive progression of stand-alone games. Its defining feature of an ever-evolving, customizable fantasy avatar
+that becomes increasingly muscular and powerful as users maintain healthy habits. Rather than relying solely on activity statistics,
+social influence, or individual game missions, MakeMe proposes to investigate whether aspirational character development can provide
+an additional source of motivation for users to maintain their health routines over time.}
+
+
+% ============================================================
+% 3. Implementation Goals and Scope
+% ============================================================
+\section{Implementation Goals and Scope}
+
+\subsection{Implementation Goals}
+
+% State 3–5 concrete goals.
+% Goals should describe observable capabilities rather than vague intentions.
+
+\begin{enumerate}
+    \item \textbf{Goal 1.} Implement an independent body-part-based avatar progression. A customizable avatar whose initial build
+        is determined by a user survey with individual body parts grows independently in response to logged workouts. Workout duration,
+        selected muscle groups, and some aspects in meal logging influences avatar growth, while a decay system will regulate its development overtime.
+    \item \textbf{Goal 2.} Integrate core functionality from conventional fitness tracker apps and Avatar state systems. Implementing essential
+        activity logging for habit tracking such as workouts, meals, hydration, and sleep logging systems that influence the avatar’s
+        physical condition and appearance. The system will incorporate workout streaks, clean, and dirty bulk progression, and conditional
+        states such ass sleepy, dehydrated, in peak condition, recovering and dead.
+    \item \textbf{Goal 3.} Develop and a three-month progression cycle and reward system. Implement a 90-day progression period in which
+        users can track their habits and observe changes in their avatars. At the end of the cycle, the system will present a summary of
+        the user’s progress and determine whether specific user goals were accomplished for a new cycle in which an ascension system
+        activates and resets the avatar through another user survey. Limited badges and equipment are rewarded to users for completing
+        daily and long-term goals through a reward system.
+\end{enumerate}
+
+\subsection{Core Functional Requirements}
+
+% List 4–6 core functional requirements.
+% Focus on externally visible behavior rather than implementation details.
+
+\begin{itemize}
+    \item \textbf{R1.} Initial Avatar Set Up. The system will collect initial user data through a survey and use the response as the avatars baseline.
+    \item \textbf{R2.} Workout Logging and Muscle-Specific Growth. A dedicated workout logger that collects duration, selected exercised
+         body parts, and intensity level from user input. The system uses this input to calculate growth for selected body parts.
+    \item \textbf{R3.} Workout Streak Tracking: The system maintains a workout streak using a 48-interval after a workout log,
+         allowing users to include rest days without automatically breaking their streaks.
+    \item \textbf{R4.} Avatar Decay. The avatar decays continuously and can be accelerated through poor meal logging habits.
+         This system balances growth from workout logging to simulate a semi-realistic growth rate. 
+    \item \textbf{R5.} Avatar State System: The system updates the avatars’ appearance and state based on the user’s logged habits.
+    \item \textbf{R6.} Habit Logging. Allows users to record meals, hydration and sleep that contributes to avatars state system and progression.
+    \item \textbf{R7.} Bulk Progression. Accumulated throughout the cycle and reads through macro report from macro tracker and calculates
+         progression in clean bulk and dirty bulk that influence the avatars overall appearance.
+    \item \textbf{R8.} Recovery and Revival. Prolonged period of inactivity can result to the avatars death. A recovery system
+         detects the users return within three stages that determines recovery state from initial return work out logging to a three-day
+          workout streak. The avatar loses all its progress and will return to its initial state.
+    \item \textbf{R9.} Cycle Completion and Summary. The system tracks a 90-day cycle to simulate a three-month transformation and presents
+         a summary of the user’s activity, avatar development, and achievements.
+    \item \textbf{R10.} Ascension System. Determines if the user has completed their long-term goals and allows the user to begin a new cycle,
+        including a new initial survey and avatar baseline. A badge or title will be rewarded with each ascension.
+    \item \textbf{R11.} Limited rewards such as badges or cosmetic items for completing certain milestones.
+\end{itemize}
+
+\subsection{Initial Scope}
+
+\textbf{In scope.}
+The initial version of MakeMe will focus on implementing the avatar’s initial configuration, muscle-specific growth, workout logging,
+     streak system, and time-based decay. It will also include habit logging, supporting avatars conditional states and bulk progression.
+        A 90-day progression cycle, cycle-completion and summary that provides the user a long term objective.
+
+\medskip
+
+\textbf{Out of scope.}
+The initial implementation will exclude extensive equipment collections, multiplayer features, competitive leaderboards,
+     and advanced social systems. Character customization, avatar appearance states, and visual progression will also be
+        limited to a predefined set of options. Additionally, the application will not provide medical diagnoses or claim
+     that avatar development accurately represents a user's real body composition or physical health.
+
+% ============================================================
+% 4. Initial Design
+% ============================================================
+\section{Initial Design}
+
+\subsection{Use-Case Diagram}
+
+% Include the main actors and 4–6 meaningful user-level use cases.
+% Actors remain outside the system boundary.
+% Use cases should represent user goals, not Java methods or classes.
+%
+% Export the diagram as PDF when possible and save it as:
+%   figures/use-case-diagram.pdf
+
+The primary actor is the User, who interacts with the application to track health habits and monitor personal progress. The user's goals
+include creating an initial avatar, logging health related-activities, viewing the avatars visual development as it changes in stature,
+appearance, and condition in response to their habits, reviewing macronutrient summaries and cycle progress, avatar personalization,
+and managing health goals. These use cases illustrate how MakeMe combines health habit tracking with visual character progression
+to encourage users to maintain healthy routeines throughout the 90-day progression cycle represented in \cref{fig:usecase}.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{figures/use-case-diagram.pdf}{
+        \includegraphics[width=0.92\linewidth]{figures/use-case-diagram.pdf}
+    }{
+        \figureplaceholder{55mm}{Add \texttt{figures/use-case-diagram.pdf}}
+    }
+    \caption{Initial use-case diagram for the proposed system.}
+    \label{fig:usecase}
+\end{figure}
+
+\subsection{Class Diagram}
+
+% Show:
+%   - the main classes and/or interfaces
+%   - important attributes and operations where appropriate
+%   - meaningful relationships
+%   - relevant multiplicities
+%
+% Do not invent inheritance only to make the diagram more complex.
+%
+% Export as:
+%   figures/class-diagram.pdf
+
+The class diagram shown in \cref{fig:classdiagram} organizes MakeMe into classes responsible for user profiles, avatar progression, workout logging,
+     nutrition tracking, and health habits. The Avatar and BodyPart classes manage visual development, while BulkProgression
+        and the streak classes track consistency and progress. The CycleManager manages the 90-day progression cycle,
+        and the RewardSystem handles milestone rewards and equipment unlocks. Relationships between classes primarily
+        use associations and composition, while inheritance connects the abstract Streak class to WorkoutStreak and MealStreak.
+        Enumerations define predefined states and options used throughout the system.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{figures/class-diagram.pdf}{
+        \includegraphics[width=0.92\linewidth]{figures/class-diagram.pdf}
+    }{
+        \figureplaceholder{55mm}{Add \texttt{figures/class-diagram.pdf}}
+    }
+    \caption{Initial UML class diagram for the proposed system.}
+    \label{fig:classdiagram}
+\end{figure}
+
+% ============================================================
+% 5. Feasibility and Supporting Evidence
+% ============================================================
+\section{Feasibility and Supporting Evidence}
+
+% Describe the technologies relevant to the proposal:
+% language, framework, libraries, APIs, database/data source,
+% external services, operating environment, or hardware.
+%
+% Explain why the project is feasible within the course.
+%
+% Include at least one supporting figure beyond the UML diagrams, such as:
+%   - UI mockup
+%   - architecture sketch
+%   - API result
+%   - screenshot of an existing system/component
+%   - small prototype or technical experiment
+%
+% Clearly distinguish a proposed design from a tested result
+
+\textit{The technical feasibility of MakeMe depends primarily on developing its avatar progression system, which
+    is expected to require the largest portion of development time. Unlike conventional fitness applications that
+    display numerical statistics, MakeMe aims to visually represent progress through body-part-specific growth.
+    The system must translate workout duration, intensity, targeted muscle groups, consistency, and inactivity 
+    into visible changes to the avatar's chest, arms, shoulders, back, core, and legs. To reduce complexity, the 
+    initial implementation will use a predefined 2D or semi-2D character model with limited growth stages for each 
+    body part, avoiding complex real-time 3D deformation. The project will also exclude multiplayer features, 
+    competitive leaderboards, extensive equipment collections, advanced social systems, and unrestricted character 
+    customization. Additionally, the application will not provide medical diagnoses or claim that avatar development 
+    accurately represents a user's real body composition or physical health. These exclusions allow development to 
+    focus on the core features of habit tracking, avatar progression, and the 90-day cycle. An AI generated UI mockup
+    by ChatGPT can be used to visualize the interface and avatar progression, providing a reference for development and user
+    testing as shown in Figure \cref{fig:feasibility}.}
+
+\textit{For nutrition tracking, MakeMe could integrate an external API such as USDA FoodData Central\cite{USDAFoodDataCentralAPI} 
+    to retrieve food information and calculate calories and macronutrients, reducing the need to create a comprehensive food database from scratch.
+    However, the team must account for API integration, serving-size matching, and secure API key management; a smaller
+    predefined database could serve as a fallback. Flutter is a potential framework for developing both Android and iOS
+    applications from a shared codebase, although learning Dart and Flutter introduces an initial learning curve. Previous
+    experience with Java should help because both languages support object-oriented programming, classes, methods, and familiar
+    control structures. Development can initially focus on Android using Android Studio's emulator to test the interface and core
+    functionality without requiring a physical device. However, iOS development and testing will still require access to the 
+    appropriate Apple development tools. Overall, MakeMe is feasible if the team prioritizes a functional minimum viable product, 
+    tests the avatar growth and decay rules carefully, and postpones nonessential features until the core tracking and progression 
+    systems work reliably.}
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{figures/feasibility-evidence.png}{
+        \includegraphics[width=0.82\linewidth]{figures/feasibility-evidence.png}
+    }{
+        \figureplaceholder{45mm}{Add supporting feasibility evidence here.}
+    }
+    \caption{Supporting feasibility evidence for the proposed project.}
+    \label{fig:feasibility}
+\end{figure}
+
+% Example for a borrowed/adapted image:
+% \caption{Existing system architecture, adapted from \cite{demoDocs2026}.}
+
+% ============================================================
+% 6. Resources and Risks
+% ============================================================
+\section{Resources and Risks}
+
+% Identify required software, data, hardware, APIs, accounts, licenses,
+% or other resources.
+%
+% Identify at least two meaningful risks or constraints and explain
+% how each could be reduced or handled.
+
+\begin{table}[H]
+    \centering
+    \caption{Initial project risks and mitigation strategies.}
+    \label{tab:risks}
+    \begin{tabularx}{\textwidth}{
+        >{\raggedright\arraybackslash}p{0.27\textwidth}
+        >{\raggedright\arraybackslash}p{0.29\textwidth}
+        >{\raggedright\arraybackslash}X
+    }
+        \toprule
+        \textbf{Risk / Constraint} &
+        \textbf{Why it matters} &
+        \textbf{Mitigation / Fallback} \\
+        \midrule
+        Replace with risk 1 &
+        Explain the impact &
+        Explain how the risk could be reduced or handled. \\
+        \addlinespace
+        Replace with risk 2 &
+        Explain the impact &
+        Explain how the risk could be reduced or handled. \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
+
+% ============================================================
+% References
+% ============================================================
+\printbibliography[title={References}]
+
+\end{document}
