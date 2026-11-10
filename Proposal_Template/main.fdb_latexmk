@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1794141351.16486 "main.bcf" "main.bbl" "main" 1794141577.26235 0
-  "main.bcf" 1794141576 108457 096b382c7517b7b5b7296b439722fe80 "pdflatex"
+["biber main"] 1794296171.68733 "main.bcf" "main.bbl" "main" 1794296362.1686 0
+  "main.bcf" 1794296361 108457 096b382c7517b7b5b7296b439722fe80 "pdflatex"
   "references.bib" 1794141136 4694 b683f451677f27cc75c7234b52619066 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1794141575.57209 "c:/git-practice/Fernandez_Karl_ProjectProposal/Proposal_Template/main.tex" "main.pdf" "main" 1794141577.26363 0
+["pdflatex"] 1794296360.39671 "c:/git-practice/MakeMe_GroupReport/Proposal_Template/main.tex" "main.pdf" "main" 1794296362.16997 0
   "C:/Users/karlt/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1791358886 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/karlt/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1791358771 13402713 5dacc61a66b895942b14dd4de72c485f ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -130,16 +130,16 @@
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "c:/git-practice/Fernandez_Karl_ProjectProposal/Proposal_Template/main.tex" 1794141574 24530 e2757e8b9a0e9cc59d059cfb173f798f ""
+  "c:/git-practice/MakeMe_GroupReport/Proposal_Template/main.tex" 1794296359 25859 2580deedcdbc13465fc43ccfd1fa0c38 ""
   "figures/class-diagram.pdf" 1791950626 748699 e37e341545d7723854cc72fa81ded08d ""
   "figures/feasibility-evidence.png" 1791952080 2402142 4fe4918d3705f18b5d16943a19adc215 ""
   "figures/temple-logo.png" 1791254480 39212 e8c5e4e2f0f639d08ef289de96218f22 ""
   "figures/use-case-diagram.pdf" 1791913592 20481 a8c2e08f147d6b0514bf714c229b009a ""
-  "main.aux" 1794141576 4431 d15507a717122055e79e9faab3f6e162 "pdflatex"
-  "main.bbl" 1794141353 13880 b68821072bee9aa5a7ceb3c532e31aa0 "biber main"
-  "main.out" 1794141576 1833 3ca893139689de1a024c37208068989d "pdflatex"
-  "main.run.xml" 1794141576 2402 05765085d18e81025e591027ecbce8c4 "pdflatex"
-  "main.tex" 1794141574 24530 e2757e8b9a0e9cc59d059cfb173f798f ""
+  "main.aux" 1794296361 8676 8457626833f57f7ae3566b088f881e1c "pdflatex"
+  "main.bbl" 1794296173 13880 b68821072bee9aa5a7ceb3c532e31aa0 "biber main"
+  "main.out" 1794296361 8316 ee66372ff1c9fd6d1774ecbfbe63d5ec "pdflatex"
+  "main.run.xml" 1794296361 2402 05765085d18e81025e591027ecbce8c4 "pdflatex"
+  "main.tex" 1794296359 25859 2580deedcdbc13465fc43ccfd1fa0c38 ""
   (generated)
   "main.aux"
   "main.bcf"
