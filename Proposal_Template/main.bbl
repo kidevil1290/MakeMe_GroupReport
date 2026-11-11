@@ -76,8 +76,8 @@
       \strng{authornamehash}{6471fde7654fdb4e4a2426ee6006129a}
       \strng{authorfullhash}{6471fde7654fdb4e4a2426ee6006129a}
       \strng{authorfullhashraw}{6471fde7654fdb4e4a2426ee6006129a}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 15th international conference on the foundations of digital games}
@@ -105,8 +105,8 @@
       \strng{authornamehash}{2432f539835ec884067bd3826e291388}
       \strng{authorfullhash}{2432f539835ec884067bd3826e291388}
       \strng{authorfullhashraw}{2432f539835ec884067bd3826e291388}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{9}
@@ -144,8 +144,8 @@
       \strng{authornamehash}{d162e618373bc4921e8d635dee2efbfe}
       \strng{authorfullhash}{d162e618373bc4921e8d635dee2efbfe}
       \strng{authorfullhashraw}{d162e618373bc4921e8d635dee2efbfe}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{17}
@@ -205,8 +205,8 @@
       \strng{authornamehash}{a7b8bdc6dd61f2ec34c15088bf098088}
       \strng{authorfullhash}{676735ddbdda10ddc791af4d18794bce}
       \strng{authorfullhashraw}{676735ddbdda10ddc791af4d18794bce}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the Annual Symposium on Computer-Human Interaction in Play}
@@ -254,8 +254,8 @@
       \strng{authornamehash}{09ca573082ae4f8d66c1ca79d1e68856}
       \strng{authorfullhash}{2f53c5b9431433cece708efae308d962}
       \strng{authorfullhashraw}{2f53c5b9431433cece708efae308d962}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Journal of Medical Internet Research}
@@ -287,8 +287,8 @@
       \strng{authornamehash}{891823ba3dd7506691edf729cb763da0}
       \strng{authorfullhash}{891823ba3dd7506691edf729cb763da0}
       \strng{authorfullhashraw}{891823ba3dd7506691edf729cb763da0}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 2007 conference on Future Play}
@@ -311,8 +311,8 @@
       \strng{authornamehash}{a1e768a0804909b3eddc399581d4a1c6}
       \strng{authorfullhash}{a1e768a0804909b3eddc399581d4a1c6}
       \strng{authorfullhashraw}{a1e768a0804909b3eddc399581d4a1c6}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://fdc.nal.usda.gov/api-guide}}

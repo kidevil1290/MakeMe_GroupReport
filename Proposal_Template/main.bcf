@@ -2375,14 +2375,13 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1" intorder="1">fox2009VRS</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">fox2009VRS</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">praetorius2020avatars</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">hall2026bestfitnessapps</bcf:citekey>
-    <bcf:citekey order="4" intorder="2">herman2026bestfitnessapps</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">neupane2020review</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">koh2026motivational</bcf:citekey>
-    <bcf:citekey order="6" intorder="2">yim2007using</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">USDAFoodDataCentralAPI</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">praetorius2020avatars</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">hall2026bestfitnessapps</bcf:citekey>
+    <bcf:citekey order="3" intorder="2">herman2026bestfitnessapps</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">neupane2020review</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">koh2026motivational</bcf:citekey>
+    <bcf:citekey order="5" intorder="2">yim2007using</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">USDAFoodDataCentralAPI</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

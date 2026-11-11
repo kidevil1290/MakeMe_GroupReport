@@ -83,9 +83,9 @@
 % ============================================================
 % Student information — edit these four lines
 % ============================================================
-\newcommand{\projecttitle}{Project Template}
+\newcommand{\projecttitle}{MakeMe}
 \newcommand{\studentname}{Karl Fernandez}
-\newcommand{\proposaltype}{New Software System / Existing Open-Source Extension}
+\newcommand{\proposaltype}{Group Report}
 % \newcommand{\submissiondate}{October 2026}
 
 % Figure placeholder used until an image file is added.
@@ -117,11 +117,11 @@
 
     \vfill
 
-    {\Large\bfseries Group Report\par}
+    {\Large\bfseries \proposaltype\par}
 
     \vspace{1.0cm}
 
-    {\huge\bfseries MakeMe \par}
+    {\huge\bfseries \projecttitle \par}
 
     \vspace{1.5cm}
 
@@ -130,6 +130,7 @@
             & Karl Fernandez \\
             & Moe Odaki \\ 
             & Scout Peterson \\[3pt]
+        Github: & \url{https://github.com/kidevil1290/makeme} \\
         Date: & November 26, 2026 \\
     \end{tabular}
 
@@ -142,6 +143,23 @@
 % 1. Abstract
 % ============================================================
 \section{Abstract}
+\textit{Maintaining consistent exercise habits over an extended period can be challenging,
+particularly when fitness progress is primarily represented through numerical data.
+MakeMe is a gamified fitness-tracking application designed to address this challenge by
+integrating personalized avatar progression into the fitness-tracking experience.
+The application translates users' real-world activities into visual changes in a personalized
+virtual character, with its initial minimum viable product (MVP) incorporating four core
+components: character customization, workout logging, muscle-specific progression,
+and a 90-day game cycle. Character customization allows users' to personalize their avatars,
+establishing a stronger sense of connection with their virtual representations,
+while the 90-day cycle introduces a structured progression period that provides a longer-term
+objective. At the core of this system, workout logging records users' training activity,
+which drives muscle-specific growth in their avatars. This creates a direct relationship
+between real-world exercise and virtual character development, allowing users' to visualize
+how their individual training activities contribute to their avatars progression.
+Through these interconnected mechanics, MakeMe aims to provide users' with a more engaging
+representation of their fitness progress and encourage consistent exercise through
+game-inspired progression mechanics.}
 
 
 
@@ -151,8 +169,90 @@
 \section{Introduction}
 
 \subsection{Background and Context}
+Conventional fitness-tracking applications provide users with a range of tools to monitor
+and manage their physical activities. Activities that were traditionally recorded through
+handwritten logs and manual calculations can now be conveniently organized within digital
+platforms, allowing users to track workout frequency, monitor performance, and review their 
+progress over time. These features provide valuable feedback and help users establish a
+structured approach to their fitness routines. Across many of these applications,
+numerical statistics remain a central method of presenting users' progress. However,
+while these measurements provide useful information, they offer limited opportunities
+for users to visually identify with their progress or develop an aspirational connection
+with their fitness goals. As a result, the ability to monitor fitness activity does not
+necessarily translate into sustained motivation or consistent exercise habits. 
+
+One potential approach to making fitness progress more engaging is through the use of
+personalized virtual avatars. These avatars can serve as visual representations of users,
+gradually developing alongside their real-world physical activities. By allowing users
+to customize their virtual characters, applications can create opportunities for stronger
+self-identification, making the avatar's development more personally meaningful.
+Furthermore, allowing these characters to develop toward an idealized physique introduces
+an aspirational element, giving users a visual representation of what they may hope to
+achieve through their own fitness journey. Through this combination of self-representation
+and aspiration, virtual avatars can provide users with a more personal and engaging
+connection to their fitness goals.
+
+Building upon these concepts, MakeMe is a gamified fitness-tracking application designed
+to connect users' real-world exercise activities with the development of a personalized
+virtual avatar. The initial minimum viable product (MVP) focuses on four core components:
+character customization, workout logging, muscle-specific progression, and a 90-day game
+cycle. Users can personalize their characters and record their workout activities,
+which contribute to the gradual development of specific muscle groups within the avatar.
+Rather than representing physical development as a generalized progression, MakeMe aims
+to reflect users' individual training habits through muscle-specific visual changes. This
+progression is further structured around a 90-day cycle, providing users with a defined
+period in which to develop their avatars and work toward their fitness goals. By combining
+workout tracking, character customization, and visual progression, MakeMe seeks to create
+a more personalized and game-inspired approach to monitoring fitness development.
+
 \subsection{Motivation and Problem Statement}
+Despite the availability of fitness-tracking applications, maintaining consistent
+engagement with exercise routines remains a challenge for many individuals. Recording
+workouts and monitoring physical activity can help users organize their fitness routines,
+but these activities alone do not necessarily provide a compelling reason to remain engaged
+over an extended period. There is an opportunity to explore how game-inspired progression
+systems can make continued participation more meaningful by connecting users' exercise
+efforts with a sense of personal development. The challenge addressed by MakeMe is to design
+an application that translates individual workout activities into personalized,
+muscle-specific avatar progression while providing a structured experience through its
+90-day game cycle.
+
+The motivation behind developing MakeMe stems from the opportunity to make fitness
+tracking more engaging through concepts commonly found in video games.
+By incorporating personalized character development into the fitness-tracking
+experience, the project explores how users can establish a stronger connection
+with their fitness goals through virtual self-representation and aspirational
+progression. Rather than focusing exclusively on recording physical activities,
+MakeMe aims to provide users with a visual representation of their training efforts,
+where individual workouts contribute to the gradual development of a character
+they have personalized. This approach seeks to make fitness progression more
+personally meaningful while introducing game-inspired mechanics that may
+encourage users to remain engaged with their exercise routines. Ultimately,
+the project aims to explore how principles of character customization and progression
+can be applied to fitness applications to support a more engaging approach to exercise tracking.
 \subsection{Project Goals and Objectives}
+MakeMe's primary goal is to explore how conventional fitness-tracking functionality
+can be extended through game-inspired character progression. By incorporating personalized
+virtual representations into the fitness-tracking experience, the project aims to establish
+a more engaging approach to visualizing users' fitness development. The initial MVP serves
+as the foundation for this broader vision, establishing the essential functionality and
+progression systems upon which additional features can be developed and integrated in the future.
+
+To establish this foundation, the project pursues the following objectives.
+\begin{enumerate}
+    \item Develop a Personalized Avatar System: Implement a customizable virtual
+    character whose appearance can be personalized by users with individual muscle groups
+    that develops independently through recorded workout activities.
+    
+    \item Integrate Core Fitness-Tracking Functionality: Implement essential
+    workout-logging functionality that allows users to record their exercise
+    activities serving as the foundation for the application's avatar progression system.
+
+    \item Establish a Structured Progression System: Develop a 90-day progression
+    cycle that provides users with a defined period to track their activities, observe
+    avatar development, and work toward longer-term fitness goals.
+
+\end{enumerate}
 
 % ============================================================
 % 3. Literature Review and Related Work
@@ -160,11 +260,59 @@
 \section{Literature Review and Related Work}
 
 \subsection{Relevant Resrearch and Existing Products}
-\subsection{Comparison With the Proposed Project}
+MakeMe’s avatar system draws on virtual self-modeling through vicarious reinforcement by Fox
+and Bailenson, which explored how observing virtual representation of oneself receiving reinforcement
+would influence exercise behavior \cite{fox2009VRS}. However, their research used virtual representation that
+resembled the participants, whereas MakeMe features fantasy-based character development that would
+later skew away from the users physical appearance. This distinction is intentional, as MakeMe allows
+users to watch their avatars develop into increasingly muscular and powerful characters, potentially
+inspiring them to aspire to the strength and appearance of their virtual counterparts, motivating them
+to maintain healthy habits. This design aligns the concept of wishful identification mentioned in the
+review research by Praetorius and Gorlich on the Proteus Effect, which describes how an avatar's characteristics
+may influence a users behavior and self-perception \cite{praetorius2020avatars}.Drawing on these concepts, MakeMe’s
+avatar system is designed around two complementary forms of progression: reflective and aspirational. Where the development
+of the avatar is a direct reflection of users actions, while aspirational progression allows the avatar to evolve towards
+an idolized physique that users may wish to achieve themselves. While existing research does not directly establish
+a link between avatar progression and the development of healthy habits, incorporating them may still offer
+motivational benefits compared with health tracking applications without an avatar.
 
-% ============================================================
-% 4.Project Requirements
-% ============================================================
+Although ranking of the top 10 fitness trackers may vary due to subjective
+reviews and potential biases, many of them can be broadly classified into three categories based on their approaches
+to fitness tracking and gamification.
+
+Category 1 consists of conventional fitness trackers that incorporate little to no gamification,
+focusing primarily on workouts, activity logging, and social features \cite{hall2026bestfitnessapps, herman2026bestfitnessapps}. Their
+popularity suggests that stand-alone fitness monitoring remains an established approach to helping users
+track their progress and maintain their fitness routine. However, this category represents only one approach
+to fitness tracking and does not establish whether users would benefit from engaging or game-oriented alternatives.
+
+Category 2 consists of challenge-based gamified fitness trackers that are oriented to encourage physical
+activity through step-count goals, competitions, social challenges, and real-world incentives. In 2020, (Neupane et al.)
+reviewed 103 gamified fitness tracker apps and found that challenges, competition and social influence frequently
+appeared together, while social features played a central role across nearly every identified game genre \cite{neupane2020review}.
+These findings demonstrate how conventional activity tracking can be enhanced with game mechanics that encourage
+users to remain active through external rewards, social interaction, and competition. However, this approach primarily
+builds on existing fitness tracking activities rather than making exercise part of a broader, evolving game experience.
+
+Category 3 consists of stand-alone games that integrate physical activity directly into gameplay, encouraging
+users to exercise as they pursue in-game objectives. Games such as PokemonGO and Wii Sports demonstrate the popularity
+of this approach making physical activity more engaging through exploration and interactive gameplay \cite{koh2026motivational, yim2007using}.
+In these games, physical avtivity is not simply a means of tracking progress but an integral part of the game itself. Players are motivated to move, explore, and engage with their environment to achieve in-game goals.
+However, research on PokemonGO suggests that increased in physical activity may be short-lived, highlighting the challenge
+of sustaining user engagement and long-term exercise habits.
+
+\subsection{Comparison With the Proposed Project}
+Initially, MakeMe was envisioned as an application that would combine elements from the three
+approaches discussed above, bringing together conventional fitness tracking, gamification,
+and interactive gameplay. However, as the project developed, its scope was refined to focus
+on a more specific aspect of the fitness-tracking experience: connecting users' workout
+activities with the development of their virtual avatars. Rather than attempting to incorporate
+the various challenges, social features, and gameplay mechanics found in existing solutions,
+the current MVP places its emphasis on workout logging and muscle-specific avatar progression.
+Through this approach, recorded exercise activities directly contribute to the development of
+corresponding muscle groups within a personalized character. This shift allows MakeMe to
+concentrate on its central design concept providing users with a visual representation of
+their training efforts through an avatar that develops alongside their fitness journey.
 \section{Project Requirements}
 
 \subsection{Product Vision and Scope}
@@ -448,20 +596,6 @@ an additional source of motivation for users to maintain their health routines o
 % State 3–5 concrete goals.
 % Goals should describe observable capabilities rather than vague intentions.
 
-\begin{enumerate}
-    \item \textbf{Goal 1.} Implement an independent body-part-based avatar progression. A customizable avatar whose initial build
-        is determined by a user survey with individual body parts grows independently in response to logged workouts. Workout duration,
-        selected muscle groups, and some aspects in meal logging influences avatar growth, while a decay system will regulate its development overtime.
-    \item \textbf{Goal 2.} Integrate core functionality from conventional fitness tracker apps and Avatar state systems. Implementing essential
-        activity logging for habit tracking such as workouts, meals, hydration, and sleep logging systems that influence the avatar’s
-        physical condition and appearance. The system will incorporate workout streaks, clean, and dirty bulk progression, and conditional
-        states such ass sleepy, dehydrated, in peak condition, recovering and dead.
-    \item \textbf{Goal 3.} Develop and a three-month progression cycle and reward system. Implement a 90-day progression period in which
-        users can track their habits and observe changes in their avatars. At the end of the cycle, the system will present a summary of
-        the user’s progress and determine whether specific user goals were accomplished for a new cycle in which an ascension system
-        activates and resets the avatar through another user survey. Limited badges and equipment are rewarded to users for completing
-        daily and long-term goals through a reward system.
-\end{enumerate}
 
 \subsection{Core Functional Requirements}
 
