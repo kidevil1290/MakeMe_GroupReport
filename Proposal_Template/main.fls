@@ -252,13 +252,16 @@ INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\omxlmex.fd
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmex10.tfm
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
+INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
+INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Users\karlt\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri10.tfm
-INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
@@ -282,10 +285,6 @@ INPUT .\figures\feasibility-evidence.png
 INPUT .\figures\feasibility-evidence.png
 INPUT .\figures\feasibility-evidence.png
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
-INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
-INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
 INPUT main.aux
 INPUT .\main.out
 INPUT .\main.out
@@ -295,8 +294,6 @@ INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
-INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
-INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmcsc10.pfb
 INPUT C:\Users\karlt\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
