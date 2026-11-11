@@ -140,7 +140,7 @@
 \end{titlepage}
 
 % ============================================================
-% 1. Project Summary and Motivation
+% 1. Abstract
 % ============================================================
 \section{Abstract}
 \textit{Maintaining consistent exercise habits over an extended period can be challenging,
@@ -161,6 +161,11 @@ Through these interconnected mechanics, MakeMe aims to provide users' with a mor
 representation of their fitness progress and encourage consistent exercise through
 game-inspired progression mechanics.}
 
+
+
+% ============================================================
+% 2. Introduction
+% ============================================================
 \section{Introduction}
 
 \subsection{Background and Context}
@@ -249,6 +254,9 @@ To establish this foundation, the project pursues the following objectives.
 
 \end{enumerate}
 
+% ============================================================
+% 3. Literature Review and Related Work
+% ============================================================
 \section{Literature Review and Related Work}
 
 \subsection{Relevant Resrearch and Existing Products}
@@ -308,12 +316,78 @@ their training efforts through an avatar that develops alongside their fitness j
 \section{Project Requirements}
 
 \subsection{Product Vision and Scope}
+
+\textbf{In scope.}
+The initial version of MakeMe will focus on implementing the avatar’s initial configuration, muscle-specific growth, workout logging,
+     streak system, and time-based decay. It will also include habit logging, supporting avatars conditional states and bulk progression.
+        A 90-day progression cycle, cycle-completion and summary that provides the user a long term objective.
+
+\medskip
+
+\textbf{Out of scope.}
+The initial implementation will exclude extensive equipment collections, multiplayer features, competitive leaderboards,
+     and advanced social systems. Character customization, avatar appearance states, and visual progression will also be
+        limited to a predefined set of options. Additionally, the application will not provide medical diagnoses or claim
+     that avatar development accurately represents a user's real body composition or physical health.
+
+
 \subsection{High-Level Requirements}
-\subsection{Target Users and 2 to 5 personas}
-\textbf{Intended Users}\\ 
-MakeMe is primarily intended for individuals who enjoy video games and want to establish healthier daily habits
-through an interactive and rewarding experience. Potential users are limitless though it is mainly targeted to
-individuals who find conventional fitness applications mundane or difficult to maintain.
+
+The following requirements describe the expected behavior of the front-end interface.
+
+\begin{itemize}
+    \item \textbf{FR1: Initial Navigation.}
+    The application shall display an initial screen containing a Start button that allows users to navigate to the Home Screen.
+
+    \item \textbf{FR2: Home Screen.}
+    The application shall provide a Home Screen containing navigation options for Home, Loggers, and Stats, as well as a Start Workout button.
+
+    \item \textbf{FR3: Habit Logger Navigation.}
+    The application shall provide a Habit Logger screen with options for Workout Log, Meal Log, Hydration Log, and Sleep Log.
+
+    \item \textbf{FR4: Workout Log Interface.}
+    The application shall display a Workout Log screen containing a Workout Template button for accessing workout-related functionality.
+
+    \item \textbf{FR5: Screen Navigation.}
+    The application shall support navigation between implemented screens and provide back buttons where appropriate.
+
+    \item \textbf{FR6: Consistent UI Design.}
+    The application shall maintain consistent colors, typography, and button styles across the implemented screens.
+\end{itemize}
+
+\subsection{Target users and 2 to 5 personas}
+MakeMe primarily targets individuals who want to develop healthier habits through an interactive and gamified fitness application. The following personas represent two potential user groups.
+
+\subsubsection*{Persona 1: Alex, 21 --- University Student}
+
+\begin{itemize}
+    \item \textbf{Background:}
+    A university student who enjoys video games but struggles to maintain a consistent exercise routine.
+    \item \textbf{Technical Experience:}
+    Familiar with smartphones, mobile applications, and video games, but has limited experience with fitness tracking applications.
+    \item \textbf{Goal:}
+    Develop a regular workout routine and stay motivated by tracking personal progress.
+    \item \textbf{Relevance to MakeMe:}
+    Interested in using avatar progression and visual rewards to make fitness tracking more engaging and enjoyable.
+\end{itemize}
+
+\subsubsection*{Persona 2: Sarah, 29 --- Office Worker}
+
+\begin{itemize}
+    \item \textbf{Background:}
+    An office worker who exercises several times per week but finds it difficult to maintain healthy habits due to a busy schedule.
+    \item \textbf{Technical Experience:}
+    Comfortable using smartphones and fitness applications to track workouts and daily activities.
+    \item \textbf{Goal:}
+    Manage workout routines, nutrition, hydration, and sleep habits in one application.
+    \item \textbf{Relevance to MakeMe:}
+    Interested in combining multiple health tracking features with a visual avatar that reflects daily habits and long-term consistency.
+\end{itemize}
+
+
+% ============================================================
+% 5. System Design
+% ============================================================
 \section{System Design}
 
 \subsection{System Architecture}
@@ -322,27 +396,199 @@ individuals who find conventional fitness applications mundane or difficult to m
 \subsection{Sequence Diagram}
 \subsection{Design Patterns and Justification for Their Use}
 
+
+% ============================================================
+% 6. Inplementation and Proof of Concept
+% ============================================================
 \section{Implementation and Proof of Concept}
 
 \subsection{Tools and Technologies}
+
+The front-end interface of MakeMe was developed using Flutter and the Dart programming language. Flutter provides a widget-based framework for building mobile application interfaces.
+
+Android Studio and its Android emulator were used to display and inspect the application during development. Git and GitHub were used for version control and collaboration.
+The application also uses the Provider package for state management. A ScreenManager class, which extends ChangeNotifier, maintains the currently selected screen.
+When a user presses a navigation button, the setScreen() method updates the current screen and notifies the application to display the corresponding interface.
+
 \subsection{Implementation of the Main Features}
+
+My primary responsibility was developing the front-end screens and implementing navigation between them.
+
+\textbf{Login Screen}
+
+The Login Screen serves as the initial entry point of the application. It includes a Start button near the bottom of the screen and a Sign Up button near the top.
+Pressing the Start button navigates the user to the Home Screen. The Sign Up button currently leads to a placeholder screen.
+
+\textbf{Home Screen}
+
+The Home Screen provides the main navigation interface. It contains three navigation options: Home, Loggers, and Stats.
+A Start Workout button is positioned near the bottom of the screen, allowing users to access the Habit Logger.
+The interface uses a dark blue header, a light blue background, and rounded buttons to maintain a consistent design.
+
+\textbf{Habit Logger}
+
+The Habit Logger provides four categories: Workout Log, Meal Log, Hydration Log, and Sleep Log.
+These options are displayed as vertically arranged buttons to make navigation simple and accessible.The Workout Log button navigates to the Workout Log Screen. The remaining logging options currently lead to placeholder screens.
+
+\textbf{Workout Log Screen}
+
+The Workout Log Screen provides an interface for accessing workout-related functionality. The current screen contains a Workout Template button that navigates to a separate Workout Template screen.
+A back button allows users to return to the Habit Logger.
+At this stage, the Workout Log Screen primarily provides the navigation structure. Workout data entry and storage are not yet implemented in this screen.
+
+\textbf{Navigation Implementation}
+
+Screen navigation is managed through the ScreenManager class and the Screens enumeration. Each screen accesses the ScreenManager through Provider and calls setScreen() when a navigation button is pressed.
+This approach separates navigation state from individual screen layouts and allows the application to switch between screens without duplicating navigation logic.
+
+% ============================================================
+% 7. Rewuired Resources and Feasibility
+% ============================================================
 \section{Required Resources and Feasibility}
 
 \subsection{Hardware, Software, and Other Resources}
+The front-end development requires a computer capable of running Flutter development tools and an Android emulator. The main software resources include Flutter, Dart, Android Studio, Git, and GitHub.
+Flutter and Dart are used to develop the application interface, while Android Studio provides an environment for running and inspecting the application. Git and GitHub support collaborative development by allowing team members to maintain separate branches, track code changes, and integrate their contributions. The Provider package is used to manage application navigation state.
+
+\subsection{Feasibility Within the Available
+Time and Resources}
+
+The front-end implementation is feasible within the available development resources because Flutter provides reusable widgets and built-in interface components. The use of shared colors, reusable button layouts, and a centralized navigation manager reduces the complexity of implementing multiple screens. The current prototype demonstrates the initial navigation flow from the Login Screen to the Workout Log Screen.
+However, several features remain incomplete. Some navigation options currently lead to placeholder screens, and the Workout Log interface does not yet support recording or storing workout information. Future development will require connecting the interface to the application's data models and implementing functional input components for workout and habit tracking.
+Overall, the existing front-end provides a foundation for further development of MakeMe's fitness tracking functionality.
 \subsection{Feasibility Within the Avaialble Time and Resources}
 
+
+% ============================================================
+% 8. Results and DIscussion
+% ============================================================
 \section{Results and Discussion}
 
 \subsection{Proposed Features and Their Completion Status}
 \subsection{Testing and Results}
 \subsection{Challenges, Limitations, and Reasons for Incomplete Features}
 
+
+
+% ============================================================
+% 9. Conclusion and Future Work
+% ============================================================
+
 \section{Conclusion and Future Work}
 \subsection{Summary of Achievements}
 \subsection{Possible Improvements and Extensions}
 
+
+
+% ============================================================
+% 10. References
+% ============================================================
 \section{References}
 
+
+% Write 150–250 words.
+% Explain:
+%   - the problem
+%   - the proposed software
+%   - the intended users
+%   - the value of the project
+%   - the motivation for pursuing it
+%
+% Support factual claims with citations where appropriate.
+%
+% Citation example:
+%   Previous work has investigated similar systems \cite{demoArticle2025}.
+\textit{\textbf{Problem}\\ Maintaining a healthy lifestyle requires consistent effort, including regular physical activity, 
+adequate hydration, and balanced nutrition. Traditional fitness applications provide users with tools
+to monitor their activities, record their meals, and track their progress, but users may often struggle
+to remain motivated to use these tools over time.}
+
+\textit{\textbf{Proposed Software}\\ MakeMe is a gamified fitness application that extends conventional fitness-tracking functionality into
+life-simulation mechanics and exaggerated fantasy character progression. Its defining feature is a customizable
+avatar whose daily and long-term appearance responds to the users recorded health related behaviors. Which draws
+on the concepts of vicarious reinforcement and identification through virtual self-modeling to visually reinforce
+healthy behaviors and encourages users to identify with their virtual representation \cite{fox2009VRS}.}
+
+\textit{\textbf{Intended Users}\\ MakeMe is primarily intended for individuals who enjoy video games and want to establish healthier daily habits
+through an interactive and rewarding experience. Potential users are limitless though it is mainly targeted to
+individuals who find conventional fitness applications mundane or difficult to maintain.}
+
+\textit{\textbf{Value of the Project}\\ The primary value lies in combining health monitoring with a persistent character progression system, adding a
+motivational layer by transforming general fitness application features into visible fantasy based character development.}
+
+\textit{\textbf{Motivation}\\ My motivation for pursuing this project comes from my interest in video game development and my experience with
+conventional fitness applications, where tracking numerical data alone provided limited satisfaction. This led me to consider
+how game design principles, particularly character progression could serve as visual rewards, which would make health monitoring more engaging.}
+
+
+% ============================================================
+% 2. Background and Related Work
+% ============================================================
+\section{Background and Related Work}
+
+% Discuss relevant research, existing products, technical approaches,
+% and/or open-source systems.
+%
+% Do not simply list sources. Explain what already exists and how the
+% proposed project relates to or differs from that work.
+%
+% Use at least four credible sources, normally including two scholarly
+% or research publications.
+%
+% For an existing open-source project:
+%   - identify the repository
+%   - state the license
+%   - explain the current limitation/design problem
+%   - distinguish the proposed contribution from the original project
+
+\textit{MakeMe’s avatar system draws on virtual self-modeling through vicarious reinforcement by Fox
+and Bailenson, which explored how observing virtual representation of oneself receiving reinforcement
+would influence exercise behavior \cite{fox2009VRS}. However, their research used virtual representation that
+resembled the participants, whereas MakeMe features fantasy-based character development that would
+later skew away from the users physical appearance. This distinction is intentional, as MakeMe allows
+users to watch their avatars develop into increasingly muscular and powerful characters, potentially
+inspiring them to aspire to the strength and appearance of their virtual counterparts, motivating them
+to maintain healthy habits. This design aligns the concept of wishful identification mentioned in the
+review research by Praetorius and Gorlich on the Proteus Effect, which describes how an avatar's characteristics
+may influence a users behavior and self-perception \cite{praetorius2020avatars}. While existing research does not directly establish
+a link between avatar progression and the development of healthy habits, incorporating them may still offer
+motivational benefits compared with health tracking applications without an avatar.}
+
+\textit{\textbf{What's Out There}\\ Although ranking of the top 10 fitness trackers may vary due to subjective
+reviews and potential biases, many of them can be broadly classified into three categories based on their approaches
+to fitness tracking and gamification.}
+
+\textit{Category 1 consists of conventional fitness trackers that incorporate little to no gamification,
+focusing primarily on workouts, activity logging, and social features \cite{hall2026bestfitnessapps, herman2026bestfitnessapps}. Their
+popularity suggests that stand-alone fitness monitoring remains an established approach to helping users
+track their progress and maintain their fitness routine. However, this category represents only one approach
+to fitness tracking and does not establish whether users would benefit from engaging or game-oriented alternatives.}
+
+\textit{Category 2 consists of challenge-based gamified fitness trackers that are oriented to encourage physical
+activity through step-count goals, competitions, social challenges, and real-world incentives. In 2020, (Neupane et al.)
+reviewed 103 gamified fitness tracker apps and found that challenges, competition and social influence frequently
+appeared together, while social features played a central role across nearly every identified game genre \cite{neupane2020review}.
+These findings demonstrate how conventional activity tracking can be enhanced with game mechanics that encourage
+users to remain active through external rewards, social interaction, and competition. However, this approach primarily
+builds on existing fitness tracking activities rather than making exercise part of a broader, evolving game experience.}
+
+\textit{Category 3 consists of stand-alone games that integrate physical activity directly into gameplay, encouraging
+users to exercise as they pursue in-game objectives. Games such as PokemonGO and Wii Sports demonstrate the popularity
+of this approach making physical activity more engaging through exploration and interactive gameplay \cite{koh2026motivational, yim2007using}.
+However, research on PokemonGO suggests that increased in physical activity may be short-lived, highlighting the challenge
+of sustaining user engagement and long-term exercise habits.}
+
+\textit{MakeMe aims to combine elements from all three categories into a unified experience. It aims  to incorporate the vital
+features of health and activity monitoring from conventional fitness trackers, the measurable goals and rewards of challenge-based
+gamification, and the immersive progression of stand-alone games. Its defining feature of an ever-evolving, customizable fantasy avatar
+that becomes increasingly muscular and powerful as users maintain healthy habits. Rather than relying solely on activity statistics,
+social influence, or individual game missions, MakeMe proposes to investigate whether aspirational character development can provide
+an additional source of motivation for users to maintain their health routines over time.}
+
+
+% ============================================================
+% 3. Implementation Goals and Scope
+% ============================================================
 \section{Implementation Goals and Scope}
 
 \subsection{Implementation Goals}
