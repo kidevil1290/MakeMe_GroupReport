@@ -155,7 +155,7 @@ establishing a stronger sense of connection with their virtual representations,
 while the 90-day cycle introduces a structured progression period that provides a longer-term
 objective. At the core of this system, workout logging records users' training activity,
 which drives muscle-specific growth in their avatars. This creates a direct relationship
-between real-world exercise and virtual character development, allowing users' to visualize
+between real-world exercise and avatar development, allowing users' to visualize
 how their individual training activities contribute to their avatars progression.
 Through these interconnected mechanics, MakeMe aims to provide users' with a more engaging
 representation of their fitness progress and encourage consistent exercise through
@@ -177,21 +177,21 @@ with their fitness goals. As a result, the ability to monitor fitness activity d
 necessarily translate into sustained motivation or consistent exercise habits. 
 
 One potential approach to making fitness progress more engaging is through the use of
-personalized virtual avatars. These avatars can serve as visual representations of users,
+personalized avatars. These avatars can serve as visual representations of users,
 gradually developing alongside their real-world physical activities. By allowing users
-to customize their virtual characters, applications can create opportunities for stronger
+to customize their avatars, applications can create opportunities for stronger
 self-identification, making the avatar's development more personally meaningful.
 Furthermore, allowing these characters to develop toward an idealized physique introduces
 an aspirational element, giving users a visual representation of what they may hope to
 achieve through their own fitness journey. Through this combination of self-representation
-and aspiration, virtual avatars can provide users with a more personal and engaging
+and aspiration, avatars can provide users with a more personal and engaging
 connection to their fitness goals.
 
 Building upon these concepts, MakeMe is a gamified fitness-tracking application designed
 to connect users' real-world exercise activities with the development of a personalized
-virtual avatar. The initial minimum viable product (MVP) focuses on four core components:
+avatar. The initial minimum viable product (MVP) focuses on four core components:
 character customization, workout logging, muscle-specific progression, and a 90-day game
-cycle. Users can personalize their characters and record their workout activities,
+cycle. Users can personalize their avatars and record their workout activities,
 which contribute to the gradual development of specific muscle groups within the avatar.
 Rather than representing physical development as a generalized progression, MakeMe aims
 to reflect users' individual training habits through muscle-specific visual changes. This
@@ -298,7 +298,7 @@ Initially, MakeMe was envisioned as an application that would combine elements f
 approaches discussed above, bringing together conventional fitness tracking, gamification,
 and interactive gameplay. However, as the project developed, its scope was refined to focus
 on a more specific aspect of the fitness-tracking experience: connecting users' workout
-activities with the development of their virtual avatars. Rather than attempting to incorporate
+activities with the development of their avatars. Rather than attempting to incorporate
 the various challenges, social features, and gameplay mechanics found in existing solutions,
 the current MVP places its emphasis on workout logging and muscle-specific avatar progression.
 Through this approach, recorded exercise activities directly contribute to the development of
@@ -306,14 +306,48 @@ corresponding muscle groups within a personalized character. This shift allows M
 concentrate on its central design concept providing users with a visual representation of
 their training efforts through an avatar that develops alongside their fitness journey.
 \section{Project Requirements}
-
 \subsection{Product Vision and Scope}
+MakeMe is a gamified fitness-tracking application that aims to connect users’ real-world fitness
+activities to a developing personalized avatar. The application is designed around the idea that
+progress from workouts can be represented through a character that gradually develops alongside
+the user’s training habits. Rather than relying exclusively on numerical workout records, MakeMe
+complements them with visual character development to provide users with another way to observe
+their fitness progress.
+
+The MVP focuses on four main components: character customization, workout logging, muscle-specific
+avatar progression, and a 90-day progression cycle. Users can personalize their avatar upon
+creation before recording their workouts. Based on the recorded workouts, the avatars
+corresponding muscle groups gradually develops, allowing different areas of the character
+to progress according to the user’s training habits. The 90-day cycle provides a structured
+period for users to work toward their fitness goals, with the opportunity to ascend into a
+new cycle, receiving badges to recognize their accomplishments.
+
+The original conceived idea was a broader system that considered nutrition, hydration, and sleep
+tracking, alongside additional mechanics such as avatar decay, recovery, and bulk progression.
+However, these features have been excluded from the initial MVP due to the interest of time and
+the amount of resources they required. Several of the proposed systems also depended on extensive
+visual assets and additional implementation, which would significantly increase the project’s
+development complexity. Ultimately, MakeMe concluded to prioritize the core workout and avatar
+progression mechanics before considering integrating additional features. This narrower scope
+allowed the project to concentrate on its primary mechanic while establishing a foundation for
+future expansion.
+
 \subsection{High-Level Requirements}
+\begin{itemize}
+    \item \textbf{R1.} Initial Avatar Set Up. The system will allow users to personalize their avatars head
+        at creation and a short survey will be used to establish the avatars initial baseline.
+    \item \textbf{R2.} Workout Logging. A dedicated workout logger will collect
+        duration, select muscle group, and intensity level from user input.
+    \item \textbf{R3.} Muscle-Specific Growth. The system will take the logged data from workout logger
+        and calculate and apply growth to the corresponding muscles.
+    \item \textbf{R4.} Avatar Display. The system will display the avatar's current appearance and muscle development
+    \item \textbf{R5.} 90-day Cycle. The system will track user progression within 90-day cycle.
+    \item \textbf{R6.} Ascension System. The system will allow users to ascend into a new progression cycle
+        upon completion of the current cycle.
+    \item \textbf{R7.} Reward System. The system will reward users with a badge after ascension.
+\end{itemize}
 \subsection{Target Users and 2 to 5 personas}
-\textbf{Intended Users}\\ 
-MakeMe is primarily intended for individuals who enjoy video games and want to establish healthier daily habits
-through an interactive and rewarding experience. Potential users are limitless though it is mainly targeted to
-individuals who find conventional fitness applications mundane or difficult to maintain.
+
 \section{System Design}
 
 \subsection{System Architecture}
