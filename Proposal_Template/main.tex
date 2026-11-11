@@ -139,26 +139,107 @@
 \end{titlepage}
 
 % ============================================================
-% 1. Project Summary and Motivation
+% 1. Abstract
 % ============================================================
 \section{Abstract}
 
+
+
+% ============================================================
+% 2. Introduction
+% ============================================================
 \section{Introduction}
 
 \subsection{Background and Context}
 \subsection{Motivation and Problem Statement}
 \subsection{Project Goals and Objectives}
 
+% ============================================================
+% 3. Literature Review and Related Work
+% ============================================================
 \section{Literature Review and Related Work}
 
 \subsection{Relevant Resrearch and Existing Products}
 \subsection{Comparison With the Proposed Project}
 
+% ============================================================
+% 4.Project Requirements
+% ============================================================
 \section{Project Requirements}
 
 \subsection{Product Vision and Scope}
+
+\textbf{In scope.}
+The initial version of MakeMe will focus on implementing the avatar’s initial configuration, muscle-specific growth, workout logging,
+     streak system, and time-based decay. It will also include habit logging, supporting avatars conditional states and bulk progression.
+        A 90-day progression cycle, cycle-completion and summary that provides the user a long term objective.
+
+\medskip
+
+\textbf{Out of scope.}
+The initial implementation will exclude extensive equipment collections, multiplayer features, competitive leaderboards,
+     and advanced social systems. Character customization, avatar appearance states, and visual progression will also be
+        limited to a predefined set of options. Additionally, the application will not provide medical diagnoses or claim
+     that avatar development accurately represents a user's real body composition or physical health.
+
+
 \subsection{High-Level Requirements}
+
+The following requirements describe the expected behavior of the front-end interface.
+
+\begin{itemize}
+    \item \textbf{FR1: Initial Navigation.}
+    The application shall display an initial screen containing a Start button that allows users to navigate to the Home Screen.
+
+    \item \textbf{FR2: Home Screen.}
+    The application shall provide a Home Screen containing navigation options for Home, Loggers, and Stats, as well as a Start Workout button.
+
+    \item \textbf{FR3: Habit Logger Navigation.}
+    The application shall provide a Habit Logger screen with options for Workout Log, Meal Log, Hydration Log, and Sleep Log.
+
+    \item \textbf{FR4: Workout Log Interface.}
+    The application shall display a Workout Log screen containing a Workout Template button for accessing workout-related functionality.
+
+    \item \textbf{FR5: Screen Navigation.}
+    The application shall support navigation between implemented screens and provide back buttons where appropriate.
+
+    \item \textbf{FR6: Consistent UI Design.}
+    The application shall maintain consistent colors, typography, and button styles across the implemented screens.
+\end{itemize}
+
 \subsection{Target users and 2 to 5 personas}
+MakeMe primarily targets individuals who want to develop healthier habits through an interactive and gamified fitness application. The following personas represent two potential user groups.
+
+\subsubsection*{Persona 1: Alex, 21 --- University Student}
+
+\begin{itemize}
+    \item \textbf{Background:}
+    A university student who enjoys video games but struggles to maintain a consistent exercise routine.
+    \item \textbf{Technical Experience:}
+    Familiar with smartphones, mobile applications, and video games, but has limited experience with fitness tracking applications.
+    \item \textbf{Goal:}
+    Develop a regular workout routine and stay motivated by tracking personal progress.
+    \item \textbf{Relevance to MakeMe:}
+    Interested in using avatar progression and visual rewards to make fitness tracking more engaging and enjoyable.
+\end{itemize}
+
+\subsubsection*{Persona 2: Sarah, 29 --- Office Worker}
+
+\begin{itemize}
+    \item \textbf{Background:}
+    An office worker who exercises several times per week but finds it difficult to maintain healthy habits due to a busy schedule.
+    \item \textbf{Technical Experience:}
+    Comfortable using smartphones and fitness applications to track workouts and daily activities.
+    \item \textbf{Goal:}
+    Manage workout routines, nutrition, hydration, and sleep habits in one application.
+    \item \textbf{Relevance to MakeMe:}
+    Interested in combining multiple health tracking features with a visual avatar that reflects daily habits and long-term consistency.
+\end{itemize}
+
+
+% ============================================================
+% 5. System Design
+% ============================================================
 \section{System Design}
 
 \subsection{System Architecture}
@@ -167,28 +248,95 @@
 \subsection{Sequence Diagram}
 \subsection{Design Patterns and Justification for Their Use}
 
+
+% ============================================================
+% 6. Inplementation and Proof of Concept
+% ============================================================
 \section{Implementation and Proof of Concept}
 
 \subsection{Tools and Technologies}
+
+The front-end interface of MakeMe was developed using Flutter and the Dart programming language. Flutter provides a widget-based framework for building mobile application interfaces.
+
+Android Studio and its Android emulator were used to display and inspect the application during development. Git and GitHub were used for version control and collaboration.
+The application also uses the Provider package for state management. A ScreenManager class, which extends ChangeNotifier, maintains the currently selected screen.
+When a user presses a navigation button, the setScreen() method updates the current screen and notifies the application to display the corresponding interface.
+
 \subsection{Implementation of the Main Features}
+
+My primary responsibility was developing the front-end screens and implementing navigation between them.
+
+\textbf{Login Screen}
+
+The Login Screen serves as the initial entry point of the application. It includes a Start button near the bottom of the screen and a Sign Up button near the top.
+Pressing the Start button navigates the user to the Home Screen. The Sign Up button currently leads to a placeholder screen.
+
+\textbf{Home Screen}
+
+The Home Screen provides the main navigation interface. It contains three navigation options: Home, Loggers, and Stats.
+A Start Workout button is positioned near the bottom of the screen, allowing users to access the Habit Logger.
+The interface uses a dark blue header, a light blue background, and rounded buttons to maintain a consistent design.
+
+\textbf{Habit Logger}
+
+The Habit Logger provides four categories: Workout Log, Meal Log, Hydration Log, and Sleep Log.
+These options are displayed as vertically arranged buttons to make navigation simple and accessible.The Workout Log button navigates to the Workout Log Screen. The remaining logging options currently lead to placeholder screens.
+
+\textbf{Workout Log Screen}
+
+The Workout Log Screen provides an interface for accessing workout-related functionality. The current screen contains a Workout Template button that navigates to a separate Workout Template screen.
+A back button allows users to return to the Habit Logger.
+At this stage, the Workout Log Screen primarily provides the navigation structure. Workout data entry and storage are not yet implemented in this screen.
+
+\textbf{Navigation Implementation}
+
+Screen navigation is managed through the ScreenManager class and the Screens enumeration. Each screen accesses the ScreenManager through Provider and calls setScreen() when a navigation button is pressed.
+This approach separates navigation state from individual screen layouts and allows the application to switch between screens without duplicating navigation logic.
+
+% ============================================================
+% 7. Rewuired Resources and Feasibility
+% ============================================================
 \section{Required Resources and Feasibility}
 
 \subsection{Hardware, Software, and Other Resources}
+The front-end development requires a computer capable of running Flutter development tools and an Android emulator. The main software resources include Flutter, Dart, Android Studio, Git, and GitHub.
+Flutter and Dart are used to develop the application interface, while Android Studio provides an environment for running and inspecting the application. Git and GitHub support collaborative development by allowing team members to maintain separate branches, track code changes, and integrate their contributions. The Provider package is used to manage application navigation state.
+
+\subsection{Feasibility Within the Available
+Time and Resources}
+
+The front-end implementation is feasible within the available development resources because Flutter provides reusable widgets and built-in interface components. The use of shared colors, reusable button layouts, and a centralized navigation manager reduces the complexity of implementing multiple screens. The current prototype demonstrates the initial navigation flow from the Login Screen to the Workout Log Screen.
+However, several features remain incomplete. Some navigation options currently lead to placeholder screens, and the Workout Log interface does not yet support recording or storing workout information. Future development will require connecting the interface to the application's data models and implementing functional input components for workout and habit tracking.
+Overall, the existing front-end provides a foundation for further development of MakeMe's fitness tracking functionality.
 \subsection{Feasibility Within the Avaialble Time and Resources}
 
+
+% ============================================================
+% 8. Results and DIscussion
+% ============================================================
 \section{Results and Discussion}
 
 \subsection{Proposed Features and Their Completion Status}
 \subsection{Testing and Results}
 \subsection{Challenges, Limitations, and Reasons for Incomplete Features}
 
+
+
+% ============================================================
+% 9. Conclusion and Future Work
+% ============================================================
+
 \section{Conclusion and Future Work}
 \subsection{Summary of Achievements}
 \subsection{Possible Improvements and Extensions}
 
+
+
+% ============================================================
+% 10. References
+% ============================================================
 \section{References}
 
-\section{Project Summary and Motivation}
 
 % Write 150–250 words.
 % Explain:
