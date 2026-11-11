@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber main"] 1794296171.68733 "main.bcf" "main.bbl" "main" 1794296362.1686 0
-  "main.bcf" 1794296361 108457 096b382c7517b7b5b7296b439722fe80 "pdflatex"
+["biber main"] 1794398059.5388 "main.bcf" "main.bbl" "main" 1794399540.28022 0
+  "main.bcf" 1794399539 108392 e3fa841d6ea9ea818311517d331545da "pdflatex"
   "references.bib" 1794141136 4694 b683f451677f27cc75c7234b52619066 ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1794296360.39671 "c:/git-practice/MakeMe_GroupReport/Proposal_Template/main.tex" "main.pdf" "main" 1794296362.16997 0
+["pdflatex"] 1794399538.47386 "c:/git-practice/MakeMe_GroupReport/Proposal_Template/main.tex" "main.pdf" "main" 1794399540.28117 0
   "C:/Users/karlt/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1791358886 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/karlt/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1791358771 13402713 5dacc61a66b895942b14dd4de72c485f ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -15,7 +15,6 @@
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx10.tfm" 1256929440 12076 b54175e02101bea1addf6b2d0197ed12 ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbx12.tfm" 1256929440 12088 d750ac78274fa7c9f73ba09914c04f8a ""
-  "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmbxi10.tfm" 1256929440 17180 a5723008921cdcb0c5f4ebe997919b73 ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmcsc10.tfm" 1256929440 11276 116dd5bea6621ce4a1999f96d876084c ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr10.tfm" 1256929440 12056 7e13df7fe4cbce21b072ba7c4f4deb6e ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ec-lmr12.tfm" 1256929440 12092 7b1546e2d096cfd5dcbd4049b0b1ec2e ""
@@ -35,7 +34,6 @@
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/tfm/public/lm/ts1-lmr10.tfm" 1256929440 1556 b86d923e6b2f9aab2e313098a95cb0b8 ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb" 1256929440 121021 836464b5fe0c782d94085eb083550ccc ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb" 1256929440 116908 9a7a12d1e4df280ea0ab4aad83cdef88 ""
-  "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb" 1256929440 112766 6259d69aa3d87a505f375e49d8f6bf3a ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb" 1256929440 116427 4909e80035dae5d5a4ec2b5ddd9649dd ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb" 1256929440 119235 05e5c8d6d60439433e50047898c2c0e0 ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb" 1256929440 112593 fda2373ba4420af33949610de4c28fe8 ""
@@ -130,16 +128,16 @@
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/karlt/AppData/Local/Programs/MiKTeX/tex/latex/xurl/xurl.sty" 1641733940 4675 e4b8c405820368c2dfb03526e16d725a ""
-  "c:/git-practice/MakeMe_GroupReport/Proposal_Template/main.tex" 1794296359 25859 2580deedcdbc13465fc43ccfd1fa0c38 ""
+  "c:/git-practice/MakeMe_GroupReport/Proposal_Template/main.tex" 1794399537 30196 79feaa387039a83f6a51bf625cfbcc74 ""
   "figures/class-diagram.pdf" 1791950626 748699 e37e341545d7723854cc72fa81ded08d ""
   "figures/feasibility-evidence.png" 1791952080 2402142 4fe4918d3705f18b5d16943a19adc215 ""
   "figures/temple-logo.png" 1791254480 39212 e8c5e4e2f0f639d08ef289de96218f22 ""
   "figures/use-case-diagram.pdf" 1791913592 20481 a8c2e08f147d6b0514bf714c229b009a ""
-  "main.aux" 1794296361 8676 8457626833f57f7ae3566b088f881e1c "pdflatex"
-  "main.bbl" 1794296173 13880 b68821072bee9aa5a7ceb3c532e31aa0 "biber main"
-  "main.out" 1794296361 8316 ee66372ff1c9fd6d1774ecbfbe63d5ec "pdflatex"
-  "main.run.xml" 1794296361 2402 05765085d18e81025e591027ecbce8c4 "pdflatex"
-  "main.tex" 1794296359 25859 2580deedcdbc13465fc43ccfd1fa0c38 ""
+  "main.aux" 1794399539 8360 aa7c63630a3e0f6a94b8991c2b686ea3 "pdflatex"
+  "main.bbl" 1794398061 13880 f10dc4f1531886edc1f787a83f846c4b "biber main"
+  "main.out" 1794399539 7923 d49773ebfde90ed395724cf7e7682dc7 "pdflatex"
+  "main.run.xml" 1794399539 2402 05765085d18e81025e591027ecbce8c4 "pdflatex"
+  "main.tex" 1794399537 30196 79feaa387039a83f6a51bf625cfbcc74 ""
   (generated)
   "main.aux"
   "main.bcf"
