@@ -62,7 +62,7 @@
     linkcolor=templeburgundy,
     citecolor=templeburgundy,
     urlcolor=templeburgundy,
-    pdftitle={CIS 3296 Individual Project Proposal}
+    pdftitle={CIS 3296 Group Report: MakeMe}
 }
 
 \titleformat{\section}
@@ -76,7 +76,7 @@
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{\small CIS 3296 — Software Design}
-\rhead{\small Individual Project Proposal}
+\rhead{\small Group Report: \projecttitle}
 \cfoot{\small \thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 
@@ -155,7 +155,7 @@ establishing a stronger sense of connection with their virtual representations,
 while the 90-day cycle introduces a structured progression period that provides a longer-term
 objective. At the core of this system, workout logging records users' training activity,
 which drives muscle-specific growth in their avatars. This creates a direct relationship
-between real-world exercise and virtual character development, allowing users' to visualize
+between real-world exercise and avatar development, allowing users' to visualize
 how their individual training activities contribute to their avatars progression.
 Through these interconnected mechanics, MakeMe aims to provide users' with a more engaging
 representation of their fitness progress and encourage consistent exercise through
@@ -182,21 +182,21 @@ with their fitness goals. As a result, the ability to monitor fitness activity d
 necessarily translate into sustained motivation or consistent exercise habits. 
 
 One potential approach to making fitness progress more engaging is through the use of
-personalized virtual avatars. These avatars can serve as visual representations of users,
+personalized avatars. These avatars can serve as visual representations of users,
 gradually developing alongside their real-world physical activities. By allowing users
-to customize their virtual characters, applications can create opportunities for stronger
+to customize their avatars, applications can create opportunities for stronger
 self-identification, making the avatar's development more personally meaningful.
 Furthermore, allowing these characters to develop toward an idealized physique introduces
 an aspirational element, giving users a visual representation of what they may hope to
 achieve through their own fitness journey. Through this combination of self-representation
-and aspiration, virtual avatars can provide users with a more personal and engaging
+and aspiration, avatars can provide users with a more personal and engaging
 connection to their fitness goals.
 
 Building upon these concepts, MakeMe is a gamified fitness-tracking application designed
 to connect users' real-world exercise activities with the development of a personalized
-virtual avatar. The initial minimum viable product (MVP) focuses on four core components:
+avatar. The initial minimum viable product (MVP) focuses on four core components:
 character customization, workout logging, muscle-specific progression, and a 90-day game
-cycle. Users can personalize their characters and record their workout activities,
+cycle. Users can personalize their avatars and record their workout activities,
 which contribute to the gradual development of specific muscle groups within the avatar.
 Rather than representing physical development as a generalized progression, MakeMe aims
 to reflect users' individual training habits through muscle-specific visual changes. This
@@ -306,7 +306,7 @@ Initially, MakeMe was envisioned as an application that would combine elements f
 approaches discussed above, bringing together conventional fitness tracking, gamification,
 and interactive gameplay. However, as the project developed, its scope was refined to focus
 on a more specific aspect of the fitness-tracking experience: connecting users' workout
-activities with the development of their virtual avatars. Rather than attempting to incorporate
+activities with the development of their avatars. Rather than attempting to incorporate
 the various challenges, social features, and gameplay mechanics found in existing solutions,
 the current MVP places its emphasis on workout logging and muscle-specific avatar progression.
 Through this approach, recorded exercise activities directly contribute to the development of
@@ -314,47 +314,46 @@ corresponding muscle groups within a personalized character. This shift allows M
 concentrate on its central design concept providing users with a visual representation of
 their training efforts through an avatar that develops alongside their fitness journey.
 \section{Project Requirements}
-
 \subsection{Product Vision and Scope}
+MakeMe is a gamified fitness-tracking application that aims to connect users’ real-world fitness
+activities to a developing personalized avatar. The application is designed around the idea that
+progress from workouts can be represented through a character that gradually develops alongside
+the user’s training habits. Rather than relying exclusively on numerical workout records, MakeMe
+complements them with visual character development to provide users with another way to observe
+their fitness progress.
 
-\textbf{In scope.}
-The initial version of MakeMe will focus on implementing the avatar’s initial configuration, muscle-specific growth, workout logging,
-     streak system, and time-based decay. It will also include habit logging, supporting avatars conditional states and bulk progression.
-        A 90-day progression cycle, cycle-completion and summary that provides the user a long term objective.
+The MVP focuses on four main components: character customization, workout logging, muscle-specific
+avatar progression, and a 90-day progression cycle. Users can personalize their avatar upon
+creation before recording their workouts. Based on the recorded workouts, the avatars
+corresponding muscle groups gradually develops, allowing different areas of the character
+to progress according to the user’s training habits. The 90-day cycle provides a structured
+period for users to work toward their fitness goals, with the opportunity to ascend into a
+new cycle, receiving badges to recognize their accomplishments.
 
-\medskip
-
-\textbf{Out of scope.}
-The initial implementation will exclude extensive equipment collections, multiplayer features, competitive leaderboards,
-     and advanced social systems. Character customization, avatar appearance states, and visual progression will also be
-        limited to a predefined set of options. Additionally, the application will not provide medical diagnoses or claim
-     that avatar development accurately represents a user's real body composition or physical health.
-
+The original conceived idea was a broader system that considered nutrition, hydration, and sleep
+tracking, alongside additional mechanics such as avatar decay, recovery, and bulk progression.
+However, these features have been excluded from the initial MVP due to the interest of time and
+the amount of resources they required. Several of the proposed systems also depended on extensive
+visual assets and additional implementation, which would significantly increase the project’s
+development complexity. Ultimately, MakeMe concluded to prioritize the core workout and avatar
+progression mechanics before considering integrating additional features. This narrower scope
+allowed the project to concentrate on its primary mechanic while establishing a foundation for
+future expansion.
 
 \subsection{High-Level Requirements}
-
-The following requirements describe the expected behavior of the front-end interface.
-
 \begin{itemize}
-    \item \textbf{FR1: Initial Navigation.}
-    The application shall display an initial screen containing a Start button that allows users to navigate to the Home Screen.
-
-    \item \textbf{FR2: Home Screen.}
-    The application shall provide a Home Screen containing navigation options for Home, Loggers, and Stats, as well as a Start Workout button.
-
-    \item \textbf{FR3: Habit Logger Navigation.}
-    The application shall provide a Habit Logger screen with options for Workout Log, Meal Log, Hydration Log, and Sleep Log.
-
-    \item \textbf{FR4: Workout Log Interface.}
-    The application shall display a Workout Log screen containing a Workout Template button for accessing workout-related functionality.
-
-    \item \textbf{FR5: Screen Navigation.}
-    The application shall support navigation between implemented screens and provide back buttons where appropriate.
-
-    \item \textbf{FR6: Consistent UI Design.}
-    The application shall maintain consistent colors, typography, and button styles across the implemented screens.
+    \item \textbf{R1.} Initial Avatar Set Up. The system will allow users to personalize their avatars head
+        at creation and a short survey will be used to establish the avatars initial baseline.
+    \item \textbf{R2.} Workout Logging. A dedicated workout logger will collect
+        duration, select muscle group, and intensity level from user input.
+    \item \textbf{R3.} Muscle-Specific Growth. The system will take the logged data from workout logger
+        and calculate and apply growth to the corresponding muscles.
+    \item \textbf{R4.} Avatar Display. The system will display the avatar's current appearance and muscle development
+    \item \textbf{R5.} 90-day Cycle. The system will track user progression within 90-day cycle.
+    \item \textbf{R6.} Ascension System. The system will allow users to ascend into a new progression cycle
+        upon completion of the current cycle.
+    \item \textbf{R7.} Reward System. The system will reward users with a badge after ascension.
 \end{itemize}
-
 \subsection{Target users and 2 to 5 personas}
 MakeMe primarily targets individuals who want to develop healthier habits through an interactive and gamified fitness application. The following personas represent two potential user groups.
 
@@ -389,16 +388,99 @@ MakeMe primarily targets individuals who want to develop healthier habits throug
 % 5. System Design
 % ============================================================
 \section{System Design}
-
 \subsection{System Architecture}
-\subsection{Use Case Diagram}
-\subsection{UML Class Diagram}
-\subsection{Sequence Diagram}
-\subsection{Design Patterns and Justification for Their Use}
+The application is developed using Flutter and Dart, with Provider for state management
+and coordinating UI updates. For development and testing, Android Studio provides an integrated
+environment in which the application can be deployed and run through an Android emulator,
+allowing the team to evaluate its functionality and visual presentation. Its architecture
+emphasizes modularity and separation of responsibilities, utilizing immutable data models
+and a layered sprite rendering system to support customizable avatars and muscle-specific
+visual progression.
 
+\subsection{Use Case Diagram}
+The primary actor is the User, with a one-time avatar creation interaction. Its main interaction is recording workouts through the
+workout logger, managing workout templates and viewing the avatar’s visual development as it
+changes in stature based on the users recorded activity represented in \cref{fig:usecase}
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{figures/use-case-diagram.pdf}{
+        \includegraphics[width=0.92\linewidth]{figures/use-case-diagram.pdf}
+    }{
+        \figureplaceholder{55mm}{Add \texttt{figures/use-case-diagram.pdf}}
+    }
+    \caption{Initial use-case diagram for the proposed system.}
+    \label{fig:usecase}
+\end{figure}
+
+\subsection{UML Class Diagram}
+Figure \ref{fig:classdiagram} shows the class diagram for MakeMe. The classes fall into four groups: user
+and avatar data, workout logging, cycle management and screen navigation, with a set of enumerations
+defining the fixed options used across application.
+
+\begin{figure}[H]
+    \centering
+    \IfFileExists{figures/class-diagram.pdf}{
+        \includegraphics[width=0.92\linewidth]{figures/class-diagram.pdf}
+    }{
+        \figureplaceholder{55mm}{Add \texttt{figures/class-diagram.pdf}}
+    }
+    \caption{UML class diagram for the proposed system.}
+    \label{fig:classdiagram}
+\end{figure}
+The UserProfile class is at the center of this design. It owns the user's avatar and is related to one or
+more avatars, so earlier avatars can be kept as a history once a cycle ends. The avatar class is imutable
+, so methods such as copyWith() and addGrowth() returns a new Avatar instead of changing the existing
+one, which allows the interface to detect a change and redraw the avatar. Each avatar has many
+WorkoutLog entries, and each log determines how much growth a session contributes to the muscle groups
+trained. The CycleManager class tracks the 90-day cycle, and the ScreenManager class handles navigation between
+screens.
+\subsection{Sequence Diagram}
+Figure \ref{fig:sequencediagram} shows the sequence diagram that showcases the central interactions
+ that occurs when a user records a workout.
+\begin{figure}[H]
+    \centering
+    \IfFileExists{figures/sequence-diagram.pdf}{
+        \includegraphics[width=0.92\linewidth]{figures/sequence-diagram.pdf}
+    }{
+        \figureplaceholder{55mm}{Add \texttt{figures/sequence-diagram.pdf}}
+    }
+    \caption{Sequence Diagram for the proposed system.}
+    \label{fig:sequencediagram}
+\end{figure}
+The sequence begins when the user logs a workout on the workout logger screen. After confirming the workout,
+WorkoutLog is calculates the growth amount from the duration and intensity of the session. For each body part,
+this amount is passed to the UserProfile, which then calls Avatar to apply the growth. Because Avatar is
+immutable, it returns a new Avatar with updated values. The UserProfile then completes two actions,
+pass the updated Avatar to the CycleManager to check if the cycle is complete and notify the listeners
+to update the widget AvatarDisplay to redraw the avatar. If the cycle completes the user is taken to the ascension screen
+and is offered to start a new cycle.
+
+\subsection{Design Patterns and Justification for Their Use}
+MakeMe uses three design patterns, one of them, Observer, is part of the classical list of patterns
+from Gang of Four book, while the other two, Immutable Object and Dependency Injection, are common practices
+in object-oriented programming.
+\begin{itemize}
+    \item Oberserver: The UserProfile and ScreenManager classes extends to ChangeNotifier, and the widgets
+        that depend on them subscribe through Provider. When the data changes, the class calls notifyListeners(),
+        and only the widgets watching it are rebuilt. MakeMe chosed this pattern because the avatar needs to update
+        on screen every time a workout is logged, and having each screen check for changes would be repetitive.
+        With the Observer patter, the model does not need to know which screens are displaying it.
+    \item Immutable Object: The Avatar and HeadConfig classes are never modified in place. Methods such as
+        copyWith(), addGrowth(), withOption() return a new object with the changed values while retaining the
+        unchanged values. This works well alongside the Observer pattern, since a change to the avatar produces
+        a new object, which makes it clear when the display needs to redraw. It also keeps the avatar's data
+        in one place and reduces the chance of a program unexpectedly changing it. The trade-off is that a
+        new object is created on every change, but once replaced Dart's garbage collector can reclaim it.
+        Therefore, the old copies never accumulates in memory.
+    \item Dependency Injection: The managers are created once in app.dart via MultiProvider, and screens
+        retrieve them with context.read instead of creating their own. This means every screen works with the same UserProfile
+        and the same ScreenManager, so the avatar a user creates is the same one that appears on the home screen.
+        It also keeps the screens simpler, since they do not needd to know how the managers are built.
+\end{itemize}
 
 % ============================================================
-% 6. Inplementation and Proof of Concept
+% 6. Implementation and Proof of Concept
 % ============================================================
 \section{Implementation and Proof of Concept}
 
@@ -479,327 +561,9 @@ Overall, the existing front-end provides a foundation for further development of
 \subsection{Possible Improvements and Extensions}
 
 
-
-% ============================================================
-% 10. References
-% ============================================================
-\section{References}
-
-
-% Write 150–250 words.
-% Explain:
-%   - the problem
-%   - the proposed software
-%   - the intended users
-%   - the value of the project
-%   - the motivation for pursuing it
-%
-% Support factual claims with citations where appropriate.
-%
-% Citation example:
-%   Previous work has investigated similar systems \cite{demoArticle2025}.
-\textit{\textbf{Problem}\\ Maintaining a healthy lifestyle requires consistent effort, including regular physical activity, 
-adequate hydration, and balanced nutrition. Traditional fitness applications provide users with tools
-to monitor their activities, record their meals, and track their progress, but users may often struggle
-to remain motivated to use these tools over time.}
-
-\textit{\textbf{Proposed Software}\\ MakeMe is a gamified fitness application that extends conventional fitness-tracking functionality into
-life-simulation mechanics and exaggerated fantasy character progression. Its defining feature is a customizable
-avatar whose daily and long-term appearance responds to the users recorded health related behaviors. Which draws
-on the concepts of vicarious reinforcement and identification through virtual self-modeling to visually reinforce
-healthy behaviors and encourages users to identify with their virtual representation \cite{fox2009VRS}.}
-
-\textit{\textbf{Intended Users}\\ MakeMe is primarily intended for individuals who enjoy video games and want to establish healthier daily habits
-through an interactive and rewarding experience. Potential users are limitless though it is mainly targeted to
-individuals who find conventional fitness applications mundane or difficult to maintain.}
-
-\textit{\textbf{Value of the Project}\\ The primary value lies in combining health monitoring with a persistent character progression system, adding a
-motivational layer by transforming general fitness application features into visible fantasy based character development.}
-
-\textit{\textbf{Motivation}\\ My motivation for pursuing this project comes from my interest in video game development and my experience with
-conventional fitness applications, where tracking numerical data alone provided limited satisfaction. This led me to consider
-how game design principles, particularly character progression could serve as visual rewards, which would make health monitoring more engaging.}
-
-
-% ============================================================
-% 2. Background and Related Work
-% ============================================================
-\section{Background and Related Work}
-
-% Discuss relevant research, existing products, technical approaches,
-% and/or open-source systems.
-%
-% Do not simply list sources. Explain what already exists and how the
-% proposed project relates to or differs from that work.
-%
-% Use at least four credible sources, normally including two scholarly
-% or research publications.
-%
-% For an existing open-source project:
-%   - identify the repository
-%   - state the license
-%   - explain the current limitation/design problem
-%   - distinguish the proposed contribution from the original project
-
-\textit{MakeMe’s avatar system draws on virtual self-modeling through vicarious reinforcement by Fox
-and Bailenson, which explored how observing virtual representation of oneself receiving reinforcement
-would influence exercise behavior \cite{fox2009VRS}. However, their research used virtual representation that
-resembled the participants, whereas MakeMe features fantasy-based character development that would
-later skew away from the users physical appearance. This distinction is intentional, as MakeMe allows
-users to watch their avatars develop into increasingly muscular and powerful characters, potentially
-inspiring them to aspire to the strength and appearance of their virtual counterparts, motivating them
-to maintain healthy habits. This design aligns the concept of wishful identification mentioned in the
-review research by Praetorius and Gorlich on the Proteus Effect, which describes how an avatar's characteristics
-may influence a users behavior and self-perception \cite{praetorius2020avatars}. While existing research does not directly establish
-a link between avatar progression and the development of healthy habits, incorporating them may still offer
-motivational benefits compared with health tracking applications without an avatar.}
-
-\textit{\textbf{What's Out There}\\ Although ranking of the top 10 fitness trackers may vary due to subjective
-reviews and potential biases, many of them can be broadly classified into three categories based on their approaches
-to fitness tracking and gamification.}
-
-\textit{Category 1 consists of conventional fitness trackers that incorporate little to no gamification,
-focusing primarily on workouts, activity logging, and social features \cite{hall2026bestfitnessapps, herman2026bestfitnessapps}. Their
-popularity suggests that stand-alone fitness monitoring remains an established approach to helping users
-track their progress and maintain their fitness routine. However, this category represents only one approach
-to fitness tracking and does not establish whether users would benefit from engaging or game-oriented alternatives.}
-
-\textit{Category 2 consists of challenge-based gamified fitness trackers that are oriented to encourage physical
-activity through step-count goals, competitions, social challenges, and real-world incentives. In 2020, (Neupane et al.)
-reviewed 103 gamified fitness tracker apps and found that challenges, competition and social influence frequently
-appeared together, while social features played a central role across nearly every identified game genre \cite{neupane2020review}.
-These findings demonstrate how conventional activity tracking can be enhanced with game mechanics that encourage
-users to remain active through external rewards, social interaction, and competition. However, this approach primarily
-builds on existing fitness tracking activities rather than making exercise part of a broader, evolving game experience.}
-
-\textit{Category 3 consists of stand-alone games that integrate physical activity directly into gameplay, encouraging
-users to exercise as they pursue in-game objectives. Games such as PokemonGO and Wii Sports demonstrate the popularity
-of this approach making physical activity more engaging through exploration and interactive gameplay \cite{koh2026motivational, yim2007using}.
-However, research on PokemonGO suggests that increased in physical activity may be short-lived, highlighting the challenge
-of sustaining user engagement and long-term exercise habits.}
-
-\textit{MakeMe aims to combine elements from all three categories into a unified experience. It aims  to incorporate the vital
-features of health and activity monitoring from conventional fitness trackers, the measurable goals and rewards of challenge-based
-gamification, and the immersive progression of stand-alone games. Its defining feature of an ever-evolving, customizable fantasy avatar
-that becomes increasingly muscular and powerful as users maintain healthy habits. Rather than relying solely on activity statistics,
-social influence, or individual game missions, MakeMe proposes to investigate whether aspirational character development can provide
-an additional source of motivation for users to maintain their health routines over time.}
-
-
-% ============================================================
-% 3. Implementation Goals and Scope
-% ============================================================
-\section{Implementation Goals and Scope}
-
-\subsection{Implementation Goals}
-
-% State 3–5 concrete goals.
-% Goals should describe observable capabilities rather than vague intentions.
-
-
-\subsection{Core Functional Requirements}
-
-% List 4–6 core functional requirements.
-% Focus on externally visible behavior rather than implementation details.
-
-\begin{itemize}
-    \item \textbf{R1.} Initial Avatar Set Up. The system will collect initial user data through a survey and use the response as the avatars baseline.
-    \item \textbf{R2.} Workout Logging and Muscle-Specific Growth. A dedicated workout logger that collects duration, selected exercised
-         body parts, and intensity level from user input. The system uses this input to calculate growth for selected body parts.
-    \item \textbf{R3.} Workout Streak Tracking: The system maintains a workout streak using a 48-interval after a workout log,
-         allowing users to include rest days without automatically breaking their streaks.
-    \item \textbf{R4.} Avatar Decay. The avatar decays continuously and can be accelerated through poor meal logging habits.
-         This system balances growth from workout logging to simulate a semi-realistic growth rate. 
-    \item \textbf{R5.} Avatar State System: The system updates the avatars’ appearance and state based on the user’s logged habits.
-    \item \textbf{R6.} Habit Logging. Allows users to record meals, hydration and sleep that contributes to avatars state system and progression.
-    \item \textbf{R7.} Bulk Progression. Accumulated throughout the cycle and reads through macro report from macro tracker and calculates
-         progression in clean bulk and dirty bulk that influence the avatars overall appearance.
-    \item \textbf{R8.} Recovery and Revival. Prolonged period of inactivity can result to the avatars death. A recovery system
-         detects the users return within three stages that determines recovery state from initial return work out logging to a three-day
-          workout streak. The avatar loses all its progress and will return to its initial state.
-    \item \textbf{R9.} Cycle Completion and Summary. The system tracks a 90-day cycle to simulate a three-month transformation and presents
-         a summary of the user’s activity, avatar development, and achievements.
-    \item \textbf{R10.} Ascension System. Determines if the user has completed their long-term goals and allows the user to begin a new cycle,
-        including a new initial survey and avatar baseline. A badge or title will be rewarded with each ascension.
-    \item \textbf{R11.} Limited rewards such as badges or cosmetic items for completing certain milestones.
-\end{itemize}
-
-\subsection{Initial Scope}
-
-\textbf{In scope.}
-The initial version of MakeMe will focus on implementing the avatar’s initial configuration, muscle-specific growth, workout logging,
-     streak system, and time-based decay. It will also include habit logging, supporting avatars conditional states and bulk progression.
-        A 90-day progression cycle, cycle-completion and summary that provides the user a long term objective.
-
-\medskip
-
-\textbf{Out of scope.}
-The initial implementation will exclude extensive equipment collections, multiplayer features, competitive leaderboards,
-     and advanced social systems. Character customization, avatar appearance states, and visual progression will also be
-        limited to a predefined set of options. Additionally, the application will not provide medical diagnoses or claim
-     that avatar development accurately represents a user's real body composition or physical health.
-
-% ============================================================
-% 4. Initial Design
-% ============================================================
-\section{Initial Design}
-
-\subsection{Use-Case Diagram}
-
-% Include the main actors and 4–6 meaningful user-level use cases.
-% Actors remain outside the system boundary.
-% Use cases should represent user goals, not Java methods or classes.
-%
-% Export the diagram as PDF when possible and save it as:
-%   figures/use-case-diagram.pdf
-
-The primary actor is the User, who interacts with the application to track health habits and monitor personal progress. The user's goals
-include creating an initial avatar, logging health related-activities, viewing the avatars visual development as it changes in stature,
-appearance, and condition in response to their habits, reviewing macronutrient summaries and cycle progress, avatar personalization,
-and managing health goals. These use cases illustrate how MakeMe combines health habit tracking with visual character progression
-to encourage users to maintain healthy routeines throughout the 90-day progression cycle represented in \cref{fig:usecase}.
-
-\begin{figure}[H]
-    \centering
-    \IfFileExists{figures/use-case-diagram.pdf}{
-        \includegraphics[width=0.92\linewidth]{figures/use-case-diagram.pdf}
-    }{
-        \figureplaceholder{55mm}{Add \texttt{figures/use-case-diagram.pdf}}
-    }
-    \caption{Initial use-case diagram for the proposed system.}
-    \label{fig:usecase}
-\end{figure}
-
-\subsection{Class Diagram}
-
-% Show:
-%   - the main classes and/or interfaces
-%   - important attributes and operations where appropriate
-%   - meaningful relationships
-%   - relevant multiplicities
-%
-% Do not invent inheritance only to make the diagram more complex.
-%
-% Export as:
-%   figures/class-diagram.pdf
-
-The class diagram shown in \cref{fig:classdiagram} organizes MakeMe into classes responsible for user profiles, avatar progression, workout logging,
-     nutrition tracking, and health habits. The Avatar and BodyPart classes manage visual development, while BulkProgression
-        and the streak classes track consistency and progress. The CycleManager manages the 90-day progression cycle,
-        and the RewardSystem handles milestone rewards and equipment unlocks. Relationships between classes primarily
-        use associations and composition, while inheritance connects the abstract Streak class to WorkoutStreak and MealStreak.
-        Enumerations define predefined states and options used throughout the system.
-
-\begin{figure}[H]
-    \centering
-    \IfFileExists{figures/class-diagram.pdf}{
-        \includegraphics[width=0.92\linewidth]{figures/class-diagram.pdf}
-    }{
-        \figureplaceholder{55mm}{Add \texttt{figures/class-diagram.pdf}}
-    }
-    \caption{Initial UML class diagram for the proposed system.}
-    \label{fig:classdiagram}
-\end{figure}
-
-% ============================================================
-% 5. Feasibility and Supporting Evidence
-% ============================================================
-\section{Feasibility and Supporting Evidence}
-
-% Describe the technologies relevant to the proposal:
-% language, framework, libraries, APIs, database/data source,
-% external services, operating environment, or hardware.
-%
-% Explain why the project is feasible within the course.
-%
-% Include at least one supporting figure beyond the UML diagrams, such as:
-%   - UI mockup
-%   - architecture sketch
-%   - API result
-%   - screenshot of an existing system/component
-%   - small prototype or technical experiment
-%
-% Clearly distinguish a proposed design from a tested result
-
-\textit{The technical feasibility of MakeMe depends primarily on developing its avatar progression system, which
-    is expected to require the largest portion of development time. Unlike conventional fitness applications that
-    display numerical statistics, MakeMe aims to visually represent progress through body-part-specific growth.
-    The system must translate workout duration, intensity, targeted muscle groups, consistency, and inactivity 
-    into visible changes to the avatar's chest, arms, shoulders, back, core, and legs. To reduce complexity, the 
-    initial implementation will use a predefined 2D or semi-2D character model with limited growth stages for each 
-    body part, avoiding complex real-time 3D deformation. The project will also exclude multiplayer features, 
-    competitive leaderboards, extensive equipment collections, advanced social systems, and unrestricted character 
-    customization. Additionally, the application will not provide medical diagnoses or claim that avatar development 
-    accurately represents a user's real body composition or physical health. These exclusions allow development to 
-    focus on the core features of habit tracking, avatar progression, and the 90-day cycle. An AI generated UI mockup
-    by ChatGPT can be used to visualize the interface and avatar progression, providing a reference for development and user
-    testing as shown in Figure \cref{fig:feasibility}.}
-
-\textit{For nutrition tracking, MakeMe could integrate an external API such as USDA FoodData Central\cite{USDAFoodDataCentralAPI} 
-    to retrieve food information and calculate calories and macronutrients, reducing the need to create a comprehensive food database from scratch.
-    However, the team must account for API integration, serving-size matching, and secure API key management; a smaller
-    predefined database could serve as a fallback. Flutter is a potential framework for developing both Android and iOS
-    applications from a shared codebase, although learning Dart and Flutter introduces an initial learning curve. Previous
-    experience with Java should help because both languages support object-oriented programming, classes, methods, and familiar
-    control structures. Development can initially focus on Android using Android Studio's emulator to test the interface and core
-    functionality without requiring a physical device. However, iOS development and testing will still require access to the 
-    appropriate Apple development tools. Overall, MakeMe is feasible if the team prioritizes a functional minimum viable product, 
-    tests the avatar growth and decay rules carefully, and postpones nonessential features until the core tracking and progression 
-    systems work reliably.}
-
-\begin{figure}[H]
-    \centering
-    \IfFileExists{figures/feasibility-evidence.png}{
-        \includegraphics[width=0.82\linewidth]{figures/feasibility-evidence.png}
-    }{
-        \figureplaceholder{45mm}{Add supporting feasibility evidence here.}
-    }
-    \caption{Supporting feasibility evidence for the proposed project.}
-    \label{fig:feasibility}
-\end{figure}
-
-% Example for a borrowed/adapted image:
-% \caption{Existing system architecture, adapted from \cite{demoDocs2026}.}
-
-% ============================================================
-% 6. Resources and Risks
-% ============================================================
-\section{Resources and Risks}
-
-% Identify required software, data, hardware, APIs, accounts, licenses,
-% or other resources.
-%
-% Identify at least two meaningful risks or constraints and explain
-% how each could be reduced or handled.
-
-\begin{table}[H]
-    \centering
-    \caption{Initial project risks and mitigation strategies.}
-    \label{tab:risks}
-    \begin{tabularx}{\textwidth}{
-        >{\raggedright\arraybackslash}p{0.27\textwidth}
-        >{\raggedright\arraybackslash}p{0.29\textwidth}
-        >{\raggedright\arraybackslash}X
-    }
-        \toprule
-        \textbf{Risk / Constraint} &
-        \textbf{Why it matters} &
-        \textbf{Mitigation / Fallback} \\
-        \midrule
-        Replace with risk 1 &
-        Explain the impact &
-        Explain how the risk could be reduced or handled. \\
-        \addlinespace
-        Replace with risk 2 &
-        Explain the impact &
-        Explain how the risk could be reduced or handled. \\
-        \bottomrule
-    \end{tabularx}
-\end{table}
-
-% ============================================================
-% References
-% ============================================================
+\clearpage
 \printbibliography[title={References}]
+\clearpage
 
 \end{document}
+ 
